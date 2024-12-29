@@ -1,0 +1,26 @@
+{
+	"name": "Go",
+	"image": "mcr.microsoft.com/devcontainers/go:1-1.23-bookworm",
+	"customizations": {
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"streetsidesoftware.code-spell-checker"
+			]
+		}
+	},
+	"portsAttributes": {
+		"9000": {
+			"label": "Hello Remote World",
+			"onAutoForward": "notify"
+		}
+	},
+	"postCreateCommand": "go version",
+    "remoteUser": "vscode",
+    "containerUser": "vscode",
+    "runArgs": ["--userns=keep-id"],
+    "containerEnv": {
+        "HOME": "/home/vscode"
+    },
+    "updateRemoteUserUID": true
+}

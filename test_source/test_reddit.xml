@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+    <category term="ansible" label="r/ansible" />
+    <updated>2024-12-28T21:45:46+00:00</updated>
+    <icon>https://www.redditstatic.com/icon.png/</icon>
+    <id>/r/ansible/.rss</id>
+    <link rel="self" href="https://www.reddit.com/r/ansible/.rss" type="application/atom+xml" />
+    <link rel="alternate" href="https://www.reddit.com/r/ansible/" type="text/html" />
+    <subtitle>Automation for the People! A Subreddit dedicated to fostering communication in the
+        Ansible Community, includes Ansible, AWX, Ansible Galaxy, ansible-lint, Molecule, etc.</subtitle>
+    <title>Ansible - Simple IT Automation</title>
+    <entry>
+        <author>
+            <name>/u/samccann</name>
+            <uri>https://www.reddit.com/user/samccann</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;The
+            latest edition of the &lt;a
+            href=&quot;https://forum.ansible.com/t/the-bullhorn-167-ansible-newsletter/39271&quot;&gt;Ansible
+            Bullhorn&lt;/a&gt; is out - with updates on the next Ansible contributor summit and the
+            Ansible 12 roadmap.&lt;/p&gt; &lt;p&gt;Happy reading!&lt;/p&gt; &lt;/div&gt;&lt;!--
+            SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/samccann&quot;&gt; /u/samccann &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hioifl/the_bullhorn_issue_167/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hioifl/the_bullhorn_issue_167/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hioifl</id>
+        <link href="https://www.reddit.com/r/ansible/comments/1hioifl/the_bullhorn_issue_167/" />
+        <updated>2024-12-20T17:11:24+00:00</updated>
+        <published>2024-12-20T17:11:24+00:00</published>
+        <title>The Bullhorn, Issue #167</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/gundalow</name>
+            <uri>https://www.reddit.com/user/gundalow</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hi &lt;a
+            href=&quot;/r/ansible&quot;&gt;r/ansible&lt;/a&gt; Following on from my &lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1drclvt/proposal_consolidating_ansible_discussion/&quot;&gt;post
+            3 months ago&lt;/a&gt;, we&amp;#39;ve made some good progress which you can see from the
+            &lt;a
+            href=&quot;https://forum.ansible.com/t/proposal-consolidating-ansible-discussion-platforms/6812/&quot;&gt;Consolidating
+            Ansible discussion platforms forum post&lt;/a&gt; that a lot of progress has been made,
+            and today we&amp;#39;ve made the ansible-devel, ansible-project and awx-project Google
+            Groups readonly today.&lt;/p&gt; &lt;p&gt;As the discussion has progressed we&amp;#39;ve
+            got a &lt;a
+            href=&quot;https://forum.ansible.com/t/proposal-consolidating-ansible-discussion-platforms/6812/30&quot;&gt;formal
+            vote&lt;/a&gt; which I&amp;#39;d love to get your feedback on, ideal via the Forum,
+            though I&amp;#39;ll make sure to reply to any replies to this Reddit Post.&lt;/p&gt;
+            &lt;p&gt;Related to this, and more specifically for reddit, we will likely make &lt;a
+            href=&quot;https://www.reddit.com/r/awx/comments/1f46soo/important_proposal_archiving_rawx/&quot;&gt;r/awx
+            readonly&lt;/a&gt; to remove the fragmented discussion between &lt;a
+            href=&quot;/r/awx&quot;&gt;r/awx&lt;/a&gt; and &lt;a
+            href=&quot;/r/ansible&quot;&gt;r/ansible&lt;/a&gt;&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON
+            --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/gundalow&quot;&gt; /u/gundalow &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1fj0q19/followup_consolidating_ansible_discussion/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1fj0q19/followup_consolidating_ansible_discussion/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1fj0q19</id>
+        <link
+            href="https://www.reddit.com/r/ansible/comments/1fj0q19/followup_consolidating_ansible_discussion/" />
+        <updated>2024-09-17T14:29:53+00:00</updated>
+        <published>2024-09-17T14:29:53+00:00</published>
+        <title>Followup: Consolidating Ansible discussion platforms</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/hursofid</name>
+            <uri>https://www.reddit.com/user/hursofid</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div
+            class=&quot;md&quot;&gt;&lt;p&gt;Hello,&lt;/p&gt; &lt;p&gt;I&amp;#39;m registering same
+            value name for every task to track down &amp;#39;changed&amp;#39; attribute and to
+            perform action if any of tasks has changed. But some time ago I&amp;#39;ve realized that
+            I&amp;#39;m tracking only last task in fact, because I use same variable to register. I
+            don&amp;#39;t want to assign unique variable for every task due to length and repetitive
+            pattern.&lt;/p&gt; &lt;p&gt;For example:&lt;/p&gt; &lt;pre&gt;&lt;code&gt;--- - name:
+            Allow ipv6 local connections ansible.builtin.iptables: ip_version:
+            &amp;quot;ipv6&amp;quot; chain: INPUT in_interface: &amp;quot;lo&amp;quot; jump: ACCEPT
+            register: iptables - name: Allow established and related ingress connections
+            ansible.builtin.iptables: ip_version: &amp;quot;ipv6&amp;quot; chain: INPUT ctstate:
+            ESTABLISHED,RELATED jump: ACCEPT register: iptables - name: Allow ICMPv6
+            ansible.builtin.iptables: ip_version: &amp;quot;ipv6&amp;quot; chain: INPUT comment:
+            Allow ICMPv6 protocol in_interface: &amp;quot;{{ ansible_default_ipv6.interface
+            }}&amp;quot; jump: ACCEPT protocol: 58 register: iptables - name: Allow ssh connections
+            from anywhere ansible.builtin.iptables: ip_version: &amp;quot;ipv6&amp;quot; chain:
+            INPUT comment: Allow SSH access from anywhere destination_port: &amp;quot;{{
+            ansible_port }}&amp;quot; in_interface: &amp;quot;{{ ansible_default_ipv6.interface
+            }}&amp;quot; jump: ACCEPT protocol: 6 when: firewall_ipv6_allow_ssh and not
+            firewall_ipv6_allow_ssh_whitelist_only register: iptables - name: Save ip6tables,
+            iptables and ipset settings ansible.builtin.shell: cmd: /usr/sbin/netfilter-persistent
+            save when: iptables.changed &lt;/code&gt;&lt;/pre&gt; &lt;p&gt;Imagine that I have 200
+            tasks in this play? It would be pain to manage, is there any elegant way to address
+            this?&lt;/p&gt; &lt;p&gt;I&amp;#39;ve tried to use LLMs for that and looked up on search
+            and reddit, but haven&amp;#39;t found a solution.&lt;/p&gt; &lt;p&gt;Many thanks for any
+            suggestions!&lt;/p&gt; &lt;p&gt;UPD: Oh god I probably should just use handler for every
+            task!&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/hursofid&quot;&gt; /u/hursofid &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1ho8g09/how_to_avoid_registering_a_unique_variable_per/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1ho8g09/how_to_avoid_registering_a_unique_variable_per/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1ho8g09</id>
+        <link
+            href="https://www.reddit.com/r/ansible/comments/1ho8g09/how_to_avoid_registering_a_unique_variable_per/" />
+        <updated>2024-12-28T15:54:19+00:00</updated>
+        <published>2024-12-28T15:54:19+00:00</published>
+        <title>How to avoid registering a unique variable per task?</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/CaptainCumSock12</name>
+            <uri>https://www.reddit.com/user/CaptainCumSock12</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hi
+            all,&lt;/p&gt; &lt;p&gt;Im doing some experiments with ansible because ansible rocks. I
+            have some playbooks and roles and all but i would like to build some kind of self
+            service webportal where a user can change settings on a server. How can i connect a web
+            application (build with Django) with ansible.&lt;/p&gt; &lt;p&gt;The idea is to
+            provision ssh users to a server when added inside the webportal. My idea was to let the
+            web application generate the host_vars and run the playbooks but i dont know if that
+            would be the best way.&lt;/p&gt; &lt;p&gt;Any ideas?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON
+            --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/CaptainCumSock12&quot;&gt; /u/CaptainCumSock12
+            &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hobx92/integrate_ansible_with_a_webapp/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hobx92/integrate_ansible_with_a_webapp/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hobx92</id>
+        <link
+            href="https://www.reddit.com/r/ansible/comments/1hobx92/integrate_ansible_with_a_webapp/" />
+        <updated>2024-12-28T18:32:20+00:00</updated>
+        <published>2024-12-28T18:32:20+00:00</published>
+        <title>Integrate ansible with a webapp?</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/MysteriousScore1</name>
+            <uri>https://www.reddit.com/user/MysteriousScore1</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hi, I
+            have AWX deployed with awx-operator in 3 different region GKE clusters with a single
+            backend database. Issue is by default awx-task pods of all 3 regions are added to
+            control plane instance group, and it cannot be removed per environment. So, suppose when
+            the job is triggered from US there is a chance that job will fail if it assigned to
+            control nodes apart from US, as the final nodes on which job needs to be executed has no
+            connectivity between EU awx-task pod to on-prem US server. &lt;/p&gt; &lt;p&gt;Is there
+            a way to resolve this? Cross cluster connectivity cannot be established i.e. GKE US
+            cannot connect to on-prem EU servers. &lt;/p&gt; &lt;p&gt;Creating execution nodes
+            (pods) and adding to instance group like US, EU, etc and selecting accordingly during
+            job trigger doesn&amp;#39;t help as the control node of US only knows the execution node
+            of US, and currently no connectivity between GKE clusters as well, not sure if this can
+            be done as well. &lt;/p&gt; &lt;p&gt;Any ideas are appreciated! &lt;/p&gt;
+            &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/MysteriousScore1&quot;&gt; /u/MysteriousScore1
+            &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1ho41od/control_nodes_pods_assignment/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1ho41od/control_nodes_pods_assignment/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1ho41od</id>
+        <link
+            href="https://www.reddit.com/r/ansible/comments/1ho41od/control_nodes_pods_assignment/" />
+        <updated>2024-12-28T11:42:13+00:00</updated>
+        <published>2024-12-28T11:42:13+00:00</published>
+        <title>Control nodes (pods) assignment</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/captkirkseviltwin</name>
+            <uri>https://www.reddit.com/user/captkirkseviltwin</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;A
+            separate post actually had me curious: There is plenty of community support for Linux,
+            Windows, Cisco, et. al. - but I have seen very little in the way of custom collections
+            for Mac systems. I don’t use it myself, and until today had not looked much (which may
+            speak to why there is not much in the way of support, just not enough user
+            base!)&lt;/p&gt; &lt;p&gt;So just curious if anyone knows or has theories on it. Is it
+            lack of community interest? Technical or licensing obstacles from Apple? Is there an
+            alternate automation product that does it better for Mac? Just curious.&lt;/p&gt;
+            &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/captkirkseviltwin&quot;&gt; /u/captkirkseviltwin
+            &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hnfdxo/ansible_and_macos/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hnfdxo/ansible_and_macos/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hnfdxo</id>
+        <link href="https://www.reddit.com/r/ansible/comments/1hnfdxo/ansible_and_macos/" />
+        <updated>2024-12-27T13:56:31+00:00</updated>
+        <published>2024-12-27T13:56:31+00:00</published>
+        <title>Ansible and MacOS</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/myridan86</name>
+            <uri>https://www.reddit.com/user/myridan86</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hi
+            all&lt;/p&gt; &lt;p&gt;I have a list of Linux hosts, all with the same CentOS 9 Stream
+            version, kernel version and python, and surprisingly, I can&amp;#39;t communicate with
+            Ansible on one of them.&lt;/p&gt; &lt;p&gt;I haven&amp;#39;t yet identified the
+            reason/problem for this.&lt;br/&gt; To be honest, sometimes it works and sometimes it
+            doesn&amp;#39;t.&lt;br/&gt; It might be some configuration in SSH itself, like
+            connection limit, but I&amp;#39;m not sure.&lt;/p&gt; &lt;p&gt;If you can help,
+            I&amp;#39;d appreciate it.&lt;/p&gt; &lt;pre&gt;&lt;code&gt;[root@ksmasn01 playbooks]#
+            ansible -m ping ksmmi3r02ovirt72 -vvvvvvv ansible [core 2.16.3] config file =
+            /etc/ansible/ansible.cfg configured module search path =
+            [&amp;#39;/root/.ansible/plugins/modules&amp;#39;,
+            &amp;#39;/usr/share/ansible/plugins/modules&amp;#39;] ansible python module location =
+            /usr/lib/python3.12/site-packages/ansible ansible collection location =
+            /root/.ansible/collections:/usr/share/ansible/collections executable location =
+            /bin/ansible python version = 3.12.3 (main, Jul 2 2024, 16:34:01) [GCC 8.5.0 20210514
+            (Red Hat 8.5.0-22)] (/usr/bin/python3.12) jinja version = 3.1.2 libyaml = True Using
+            /etc/ansible/ansible.cfg as config file setting up inventory plugins Loading collection
+            ansible.builtin from host_list declined parsing /etc/ansible/hosts as it did not pass
+            its verify_file() method script declined parsing /etc/ansible/hosts as it did not pass
+            its verify_file() method auto declined parsing /etc/ansible/hosts as it did not pass its
+            verify_file() method Parsed /etc/ansible/hosts inventory source with ini plugin Loading
+            callback plugin minimal of type stdout, v2.0 from
+            /usr/lib/python3.12/site-packages/ansible/plugins/callback/minimal.py Attempting to use
+            &amp;#39;default&amp;#39; callback. Skipping callback &amp;#39;default&amp;#39;, as we
+            already have a stdout callback. Attempting to use &amp;#39;junit&amp;#39; callback.
+            Attempting to use &amp;#39;minimal&amp;#39; callback. Skipping callback
+            &amp;#39;minimal&amp;#39;, as we already have a stdout callback. Attempting to use
+            &amp;#39;oneline&amp;#39; callback. Skipping callback &amp;#39;oneline&amp;#39;, as we
+            already have a stdout callback. Attempting to use &amp;#39;tree&amp;#39; callback.
+            Including module_utils file ansible/__init__.py Including module_utils file
+            ansible/module_utils/__init__.py Including module_utils file
+            ansible/module_utils/basic.py Including module_utils file ansible/module_utils/_text.py
+            Including module_utils file ansible/module_utils/common/_json_compat.py Including
+            module_utils file ansible/module_utils/common/__init__.py Including module_utils file
+            ansible/module_utils/common/_utils.py Including module_utils file
+            ansible/module_utils/common/arg_spec.py Including module_utils file
+            ansible/module_utils/common/file.py Including module_utils file
+            ansible/module_utils/common/locale.py Including module_utils file
+            ansible/module_utils/common/parameters.py Including module_utils file
+            ansible/module_utils/common/collections.py Including module_utils file
+            ansible/module_utils/common/process.py Including module_utils file
+            ansible/module_utils/common/sys_info.py Including module_utils file
+            ansible/module_utils/common/text/converters.py Including module_utils file
+            ansible/module_utils/common/text/__init__.py Including module_utils file
+            ansible/module_utils/common/text/formatters.py Including module_utils file
+            ansible/module_utils/common/validation.py Including module_utils file
+            ansible/module_utils/common/warnings.py Including module_utils file
+            ansible/module_utils/compat/selectors.py Including module_utils file
+            ansible/module_utils/compat/__init__.py Including module_utils file
+            ansible/module_utils/compat/_selectors2.py Including module_utils file
+            ansible/module_utils/compat/selinux.py Including module_utils file
+            ansible/module_utils/distro/__init__.py Including module_utils file
+            ansible/module_utils/distro/_distro.py Including module_utils file
+            ansible/module_utils/errors.py Including module_utils file
+            ansible/module_utils/parsing/convert_bool.py Including module_utils file
+            ansible/module_utils/parsing/__init__.py Including module_utils file
+            ansible/module_utils/pycompat24.py Including module_utils file
+            ansible/module_utils/six/__init__.py Using module file
+            /usr/lib/python3.12/site-packages/ansible/modules/ping.py Pipelining is enabled.
+            &amp;lt;10.250.156.72&amp;gt; ESTABLISH SSH CONNECTION FOR USER: kosmo
+            &amp;lt;10.250.156.72&amp;gt; SSH: ansible.cfg set ssh_args:
+            (-C)(-o)(ControlMaster=auto)(-o)(ControlPersist=60s) &amp;lt;10.250.156.72&amp;gt; SSH:
+            ANSIBLE_REMOTE_PORT/remote_port/ansible_port set: (-o)(Port=22)
+            &amp;lt;10.250.156.72&amp;gt; SSH:
+            ANSIBLE_PRIVATE_KEY_FILE/private_key_file/ansible_ssh_private_key_file set:
+            (-o)(IdentityFile=&amp;quot;/root/.ssh/kosmo-ansible&amp;quot;)
+            &amp;lt;10.250.156.72&amp;gt; SSH: ansible_password/ansible_ssh_password not set:
+            (-o)(KbdInteractiveAuthentication=no)(-o)(PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey)(-o)(PasswordAuthentication=no)
+            &amp;lt;10.250.156.72&amp;gt; SSH: ANSIBLE_REMOTE_USER/remote_user/ansible_user/user/-u
+            set: (-o)(User=&amp;quot;kosmo&amp;quot;) &amp;lt;10.250.156.72&amp;gt; SSH:
+            ANSIBLE_TIMEOUT/timeout set: (-o)(ConnectTimeout=10) &amp;lt;10.250.156.72&amp;gt; SSH:
+            Set ssh_common_args: () &amp;lt;10.250.156.72&amp;gt; SSH: Set ssh_extra_args: ()
+            &amp;lt;10.250.156.72&amp;gt; SSH: found only ControlPersist; added ControlPath:
+            (-o)(ControlPath=&amp;quot;/root/.ansible/cp/7991d06dfa&amp;quot;)
+            &amp;lt;10.250.156.72&amp;gt; SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o
+            ControlPersist=60s -o Port=22 -o
+            &amp;#39;IdentityFile=&amp;quot;/root/.ssh/kosmo-ansible&amp;quot;&amp;#39; -o
+            KbdInteractiveAuthentication=no -o
+            PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o
+            PasswordAuthentication=no -o &amp;#39;User=&amp;quot;kosmo&amp;quot;&amp;#39; -o
+            ConnectTimeout=10 -o
+            &amp;#39;ControlPath=&amp;quot;/root/.ansible/cp/7991d06dfa&amp;quot;&amp;#39;
+            10.250.156.72 &amp;#39;/bin/sh -c
+            &amp;#39;&amp;quot;&amp;#39;&amp;quot;&amp;#39;/usr/bin/python3 &amp;amp;&amp;amp; sleep
+            0&amp;#39;&amp;quot;&amp;#39;&amp;quot;&amp;#39;&amp;#39; &lt;/code&gt;&lt;/pre&gt;
+            &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/myridan86&quot;&gt; /u/myridan86 &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hnfs27/ansible_freezes/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hnfs27/ansible_freezes/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hnfs27</id>
+        <link href="https://www.reddit.com/r/ansible/comments/1hnfs27/ansible_freezes/" />
+        <updated>2024-12-27T14:16:28+00:00</updated>
+        <published>2024-12-27T14:16:28+00:00</published>
+        <title>Ansible freezes :(</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/cetejada10</name>
+            <uri>https://www.reddit.com/user/cetejada10</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hi all!
+            I&amp;#39;m looking into developing my first playbook for setting up my Mac computers,
+            but I know nothing about Ansible and have never used it before. Ideally I would love to
+            use a single command and it would: - Download the playbook from a repository. - Run the
+            playbook. - Install apps and binaries using Homebrew - Install apps from Mac App Store -
+            Install app from Setapp - Set specific OS settings - Set specific application settings
+            (e.g., Visual Studio Code plugins and settings) - Set aesthetics (e.g., wallpaper and
+            dock size and icons)&lt;/p&gt; &lt;p&gt;Would love it if you could share any resources
+            that have helped for any of the above, bonus points if they&amp;#39;re for Ansible
+            newbies.&lt;/p&gt; &lt;p&gt;Many thanks in advance!&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON
+            --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/cetejada10&quot;&gt; /u/cetejada10 &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hn8olj/first_playbook/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hn8olj/first_playbook/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hn8olj</id>
+        <link href="https://www.reddit.com/r/ansible/comments/1hn8olj/first_playbook/" />
+        <updated>2024-12-27T06:17:12+00:00</updated>
+        <published>2024-12-27T06:17:12+00:00</published>
+        <title>First playbook</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/aminesogoodnolove</name>
+            <uri>https://www.reddit.com/user/aminesogoodnolove</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Nowadays,
+            I&amp;#39;m doing an internship, and my manager suggested that I promote a Windows
+            Server to a domain controller using Ansible. I completed this task successfully, and
+            everything went well. However, the issue arises when trying to join PCs to the domain.
+            There was an option to activate WinRM on the host, but it doesn&amp;#39;t work&lt;/p&gt;
+            &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/aminesogoodnolove&quot;&gt; /u/aminesogoodnolove
+            &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hniajy/joining_an_endpoint_to_active_directory_using/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hniajy/joining_an_endpoint_to_active_directory_using/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hniajy</id>
+        <link
+            href="https://www.reddit.com/r/ansible/comments/1hniajy/joining_an_endpoint_to_active_directory_using/" />
+        <updated>2024-12-27T16:14:41+00:00</updated>
+        <published>2024-12-27T16:14:41+00:00</published>
+        <title>Joining an endpoint to Active Directory using Ansible won't work</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/herr_amish</name>
+            <uri>https://www.reddit.com/user/herr_amish</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hello
+            all,&lt;/p&gt; &lt;p&gt;I inherited an old tower (3.8.6) instance on Cent7 that was
+            setup before I started at my current company. I am in progress of standing up a new AAP
+            2.5-6 continerized install on RHEL 9.4. I have made good progress so far on the new
+            install, but am hung up on trying to configure SAML now, but more specifically, trying
+            to figure out if there is a way to decode the encrypted value in the old database
+            without having to just start fresh so to speak and go through the headache of working
+            with the relevant team to get all the needed data/keys/etc.&lt;/p&gt; &lt;p&gt;The value
+            I&amp;#39;m trying to decode is in CONF_SETTING and looks like so... I have removed some
+            of the data just for security purposes, but has anyone ever managed to decode and/or
+            decrypt one of these values? I have tried to use all sorts of methods to do this, but
+            maybe I am just not finding the right thing, or just not performing all the steps.
+            &lt;/p&gt; &lt;p&gt;37 2019-12-18 15:22:23.053366+00 2019-12-18 15:22:23.053383+00
+            SOCIAL_AUTH_SAML_SP_PRIVATE_KEY
+            &amp;quot;$encrypted$UTF8$AESCBC$Z0FBQUFBQmQta1F2Z2twREVEZGswM2U4bHNYUjdZQk1aaEprbGpPa251NF9nMGFwYmQ5d3VlZTdISS1IWDJNNDdqVV9NUUJzeGw4blE2REppTzltU0oxOVR2NVJ1RkR3YU9aX3pYN1dKakJfWTZzQW5EenZjUzU1Z3p4N24xNjZ1WVNVamhaTE5xSjI2TXJ1S0ZOSDhnRlVwbFhwZ0d5QkdhRHFpNlJVQUV&lt;br/&gt;
+            ...&lt;br/&gt; ===REMOVED DATA ===&lt;br/&gt; ...&lt;br/&gt;
+            G41ZHFRQT09&amp;quot;&lt;/p&gt; &lt;p&gt;Any help or insights you could offer would be
+            greatly appreciated.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by
+            &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/herr_amish&quot;&gt;
+            /u/herr_amish &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hmyrcu/decryption_of_saml_private_key_stored_in_psql/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hmyrcu/decryption_of_saml_private_key_stored_in_psql/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hmyrcu</id>
+        <link
+            href="https://www.reddit.com/r/ansible/comments/1hmyrcu/decryption_of_saml_private_key_stored_in_psql/" />
+        <updated>2024-12-26T21:38:52+00:00</updated>
+        <published>2024-12-26T21:38:52+00:00</published>
+        <title>Decryption of SAML Private Key stored in PSQL database</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/invalidpath</name>
+            <uri>https://www.reddit.com/user/invalidpath</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Looking
+            for ideas on how others have deployed the containerized install of AAP 2.5 without using
+            Openshift.&lt;/p&gt; &lt;p&gt;K3&amp;#39;s? K8&amp;#39;s? Hosted, or On-premise? Anyone
+            doing EKS perhaps?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by
+            &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/invalidpath&quot;&gt;
+            /u/invalidpath &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hm47mz/aap_containerized_environment_how_did_you_folks/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hm47mz/aap_containerized_environment_how_did_you_folks/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hm47mz</id>
+        <link
+            href="https://www.reddit.com/r/ansible/comments/1hm47mz/aap_containerized_environment_how_did_you_folks/" />
+        <updated>2024-12-25T16:52:26+00:00</updated>
+        <published>2024-12-25T16:52:26+00:00</published>
+        <title>AAP Containerized environment, how did you folks do it?</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/Regular-Ad8659</name>
+            <uri>https://www.reddit.com/user/Regular-Ad8659</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div
+            class=&quot;md&quot;&gt;&lt;p&gt;I&amp;#39;ve been looking for a way to learn ansible
+            for network automation but a bit confused about what&amp;#39;s the best resource, I see
+            lots of courses on udemy but it&amp;#39;s often titled &amp;quot;for DevOps&amp;quot; so
+            I was wondering if I can find a course more specific for networking. For context I have
+            0 ansible knowledge.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by
+            &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/Regular-Ad8659&quot;&gt;
+            /u/Regular-Ad8659 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hm0fvi/ansible_for_network_engineers_resources/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hm0fvi/ansible_for_network_engineers_resources/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hm0fvi</id>
+        <link
+            href="https://www.reddit.com/r/ansible/comments/1hm0fvi/ansible_for_network_engineers_resources/" />
+        <updated>2024-12-25T13:08:49+00:00</updated>
+        <published>2024-12-25T13:08:49+00:00</published>
+        <title>Ansible for network engineers resources</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/BosonCollider</name>
+            <uri>https://www.reddit.com/user/BosonCollider</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div
+            class=&quot;md&quot;&gt;&lt;p&gt;I&amp;#39;m considering a bit what stack I&amp;#39;d
+            prefer to run on from a long-term perspective. Ansible and Containers are not really
+            direct alternatives to each other, but there is some overlap (declarative configuration
+            of a deployment environment).&lt;/p&gt; &lt;p&gt;Would it be correct to use Ansible
+            primarily to ensure that config files are correctly copied over and that folders exist,
+            to install container runtimes, and to use declarative container tooling for the
+            rest?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/BosonCollider&quot;&gt; /u/BosonCollider
+            &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hlxetx/advanced_ansible_vs_container_tooling/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hlxetx/advanced_ansible_vs_container_tooling/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hlxetx</id>
+        <link
+            href="https://www.reddit.com/r/ansible/comments/1hlxetx/advanced_ansible_vs_container_tooling/" />
+        <updated>2024-12-25T09:12:44+00:00</updated>
+        <published>2024-12-25T09:12:44+00:00</published>
+        <title>Advanced Ansible vs Container tooling</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/cored0wn</name>
+            <uri>https://www.reddit.com/user/cored0wn</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div
+            class=&quot;md&quot;&gt;&lt;p&gt;Hey,&lt;/p&gt; &lt;p&gt;I&amp;#39;m fairly new to
+            ansible and I stumpled across the following problem.&lt;/p&gt; &lt;p&gt;I currently use
+            proxmox as hypervisor for lxcs and vms. To connect to my vms and lxcs outside of my
+            network I use tailscale as VPN service. To setup / connect a lxc to tailscale in the
+            first place I&amp;#39;ve to add&lt;/p&gt; &lt;p&gt;&lt;code&gt;
+            lxc.cgroup2.devices.allow: c 10:200 rwm lxc.mount.entry: /dev/net/tun dev/net/tun none
+            bind,create=file &lt;/code&gt;&lt;/p&gt; &lt;p&gt;to the config file of the lxc on the
+            hypervisor (proxmox). After that I&amp;#39;ve to reboot the lxc and then proceed with
+            the installation inside the lxc itself.&lt;/p&gt; &lt;p&gt;My planned solution is to
+            have a playbook &lt;code&gt;install-tailscale.yml&lt;/code&gt; which I run against the
+            new lxc host &lt;code&gt;new-lxc1&lt;/code&gt; to install tailscale. What I
+            don&amp;#39;t know is, how I can execute commands on a different host than the specified
+            in my ansible-playbook command.&lt;/p&gt; &lt;p&gt;I&amp;#39;ve found a delegate_to
+            statement but this seems to be obsolete since v3.1&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON
+            --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/cored0wn&quot;&gt; /u/cored0wn &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hm3kb3/running_command_on_hypervisor_inside_vm_playbook/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hm3kb3/running_command_on_hypervisor_inside_vm_playbook/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hm3kb3</id>
+        <link
+            href="https://www.reddit.com/r/ansible/comments/1hm3kb3/running_command_on_hypervisor_inside_vm_playbook/" />
+        <updated>2024-12-25T16:17:42+00:00</updated>
+        <published>2024-12-25T16:17:42+00:00</published>
+        <title>Running command on hypervisor inside vm playbook</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/scriptkididid</name>
+            <uri>https://www.reddit.com/user/scriptkididid</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I
+            won&amp;#39;t lie to you all and say I&amp;#39;m some kind of w1zard_h4x0r I&amp;#39;m
+            not, I work for a severely underfunded and understaffed government department, and
+            I&amp;#39;ve had to get creative with my time.&lt;br/&gt; These are some tools I made in
+            my spare time to make managing my Tailscale network (which uses Ansible Pull for
+            updates/versioning ) a little faster/easier to manage.&lt;/p&gt; &lt;p&gt;I&amp;#39;m
+            not going to claim these are perfect at all, but I&amp;#39;ve always been of the opinion
+            that something should just work and that all the trimmings aren&amp;#39;t really
+            important.&lt;/p&gt; &lt;p&gt;Hope this helps some people, and if you want to change
+            anything, don&amp;#39;t complain, just do, fork it, make your own, I don&amp;#39;t care
+            at all.&lt;/p&gt; &lt;p&gt;First on the list is &lt;strong&gt;PingPanel&lt;/strong&gt;,
+            it&amp;#39;s a TUI based Uptime Manager, our networks team uses PRTG to monitor all our
+            kit, but I absolutely hate the process of adding devices to it, so this just
+            let&amp;#39;s you put an ansible inventory file in and then it checks if your hosts are
+            up, and it does it with a nice tree structure etc:&lt;br/&gt; &lt;a
+            href=&quot;https://github.com/xkz0/PingPanel&quot;&gt;&lt;strong&gt;https://github.com/xkz0/PingPanel&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+            &lt;p&gt;And then there&amp;#39;s a collection of tools I use for device
+            provisioning/inventory management:&lt;br/&gt;
+            &lt;strong&gt;SSH-Key-Management&lt;/strong&gt; (great name I know), this lets you
+            generate individual ssh key pairs for each device in your ansible inventory and shares
+            them with the device so you can do Ansible-Pull, it also allows you to push keys to
+            devices that were offline at the time you first tried:&lt;br/&gt; &lt;a
+            href=&quot;https://github.com/xkz0/ssh_key_management&quot;&gt;&lt;strong&gt;https://github.com/xkz0/ssh_key_management&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+            &lt;p&gt;Tailscale Auto-Tagger:&lt;/p&gt; &lt;p&gt;Use the device names on Tailscale to
+            en-masse assign ACL tags, or custom information to devices based on their names, this
+            works in tandem with the next tool, and is handy if you have a dynamic
+            inventory:&lt;/p&gt; &lt;p&gt;&lt;a
+            href=&quot;https://github.com/xkz0/tailscale-auto-tagger&quot;&gt;&lt;strong&gt;https://github.com/xkz0/tailscale-auto-tagger&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+            &lt;p&gt;AnsiScale:&lt;/p&gt; &lt;p&gt;Generates Ansible YAML inventory files with
+            parent/child structures based off of ACL tags or other custom information as set by the
+            auto-tagger, or by rules you&amp;#39;ve already implemented. Useful again if you have a
+            dynamic inventory, or you just don&amp;#39;t like constantly updating your inventory by
+            hand. Also allows you to specify SSH key name patterns which then matches them to the
+            hosts.&lt;/p&gt; &lt;p&gt;&lt;a
+            href=&quot;https://github.com/xkz0/ansiscale&quot;&gt;&lt;strong&gt;https://github.com/xkz0/ansiscale&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+            &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/scriptkididid&quot;&gt; /u/scriptkididid
+            &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hlg891/tools_i_made_at_work_that_might_help_some_folks/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hlg891/tools_i_made_at_work_that_might_help_some_folks/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hlg891</id>
+        <link
+            href="https://www.reddit.com/r/ansible/comments/1hlg891/tools_i_made_at_work_that_might_help_some_folks/" />
+        <updated>2024-12-24T15:49:38+00:00</updated>
+        <published>2024-12-24T15:49:38+00:00</published>
+        <title>Tools I made at work that might help some folks</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/cvbowlr</name>
+            <uri>https://www.reddit.com/user/cvbowlr</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div
+            class=&quot;md&quot;&gt;&lt;p&gt;Hello,&lt;/p&gt; &lt;p&gt;The harden.yaml file is not
+            being created&lt;/p&gt; &lt;p&gt;I am using sudo &lt;code&gt;ansible-galaxy collection
+            install -U devsec.hardening --force -vvv&lt;/code&gt;&lt;/p&gt; &lt;p&gt;Need to edit
+            harden.yaml so I can then &lt;code&gt;sudo ansible-playbook
+            ~/harden.yaml&lt;/code&gt;&lt;/p&gt; &lt;p&gt;Am I missing something? Why isn&amp;#39;t
+            harden.yaml being created? Using Debian 11&lt;/p&gt; &lt;p&gt;Thank you&lt;/p&gt;
+            &lt;p&gt;Update: Resolved. The guide I was following referenced this file and I expected
+            that it was created during the install. I did not realize I was supposed to manually
+            create this file. Sorry everyone, I am new to this. Thank you for the help&lt;/p&gt;
+            &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/cvbowlr&quot;&gt; /u/cvbowlr &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hl0pqx/missing_hardenyaml/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hl0pqx/missing_hardenyaml/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hl0pqx</id>
+        <link href="https://www.reddit.com/r/ansible/comments/1hl0pqx/missing_hardenyaml/" />
+        <updated>2024-12-23T23:47:33+00:00</updated>
+        <published>2024-12-23T23:47:33+00:00</published>
+        <title>Missing harden.yaml</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/AggressiveCrab007</name>
+            <uri>https://www.reddit.com/user/AggressiveCrab007</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;So here
+            are some of the reasons why I was getting this error:&lt;/p&gt; &lt;ol&gt;
+            &lt;li&gt;ansible_runner is an AUR package, so install it using some AUR helper like
+            `yay`&lt;/li&gt; &lt;li&gt;there might be some dependencies missing, which is why it
+            might fail to install correctly. For me, it was `python-changelog-chug`. Build
+            `python-changelog` instead of `python-changelog-chug`&lt;/li&gt; &lt;li&gt;other reasons
+            that people were facing this problem included: &lt;ol&gt; &lt;li&gt;Path not included in
+            bash/zsh/fish/etc&lt;/li&gt; &lt;li&gt;File/directory cannot be executed by user (check
+            for executable permissions)&lt;/li&gt; &lt;li&gt;inconsistency between python version
+            and pip version&lt;/li&gt; &lt;li&gt;everything was installed in a venv and venv
+            doesn&amp;#39;t have access to certain python modules&lt;/li&gt; &lt;/ol&gt;&lt;/li&gt;
+            &lt;/ol&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/AggressiveCrab007&quot;&gt; /u/AggressiveCrab007
+            &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hl6sxt/regarding_no_module_named_ansible_runner_in_arch/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hl6sxt/regarding_no_module_named_ansible_runner_in_arch/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hl6sxt</id>
+        <link
+            href="https://www.reddit.com/r/ansible/comments/1hl6sxt/regarding_no_module_named_ansible_runner_in_arch/" />
+        <updated>2024-12-24T05:34:01+00:00</updated>
+        <published>2024-12-24T05:34:01+00:00</published>
+        <title>Regarding 'No module named ansible_runner' in Arch</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/lightnb11</name>
+            <uri>https://www.reddit.com/user/lightnb11</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div
+            class=&quot;md&quot;&gt;&lt;p&gt;I&amp;#39;m working on a role that will automatically
+            install and setup Gitea on a remote machine.&lt;/p&gt; &lt;p&gt;Gitea has a
+            configuration file, and I&amp;#39;d like to have a template in the role for that
+            configuration file, so I can manage config changes centrally.&lt;/p&gt; &lt;p&gt;The
+            problem: The Gitea config file requires several secret tokens. The tokens can be
+            automatically generated by Gitea on the target with the command line.&lt;/p&gt;
+            &lt;p&gt;For the first playbook run (install), I can generate tokens on the command
+            line, store them in an Ansible variable, and then use that variable in the configuration
+            file template.&lt;/p&gt; &lt;p&gt;But when it&amp;#39;s time to make changes to the
+            configuration file and push it out, the tokens in that config file can&amp;#39;t change.
+            The same tokens need to be inserted into the template each time.&lt;/p&gt;
+            &lt;p&gt;There really needs to be a way to store these tokens when they are generated on
+            first playbook run, so they can be used again on future playbook runs. &lt;/p&gt;
+            &lt;p&gt;The question is, where should the tokens be stored?&lt;/p&gt; &lt;p&gt;The
+            approach I took, which seems to work is:&lt;/p&gt; &lt;p&gt;(1) Check if there is a
+            token file on the target. (2) If not, use Gitea to generate a token and write it to the
+            token file (3) Setup the template so it always pulls the value from the token
+            file.&lt;/p&gt; &lt;p&gt;The file is a plain text file with
+            &lt;code&gt;root&lt;/code&gt; as the owner, and &lt;code&gt;400&lt;/code&gt;
+            permissions.&lt;/p&gt; &lt;p&gt;I&amp;#39;m still very new to Ansible. Is there a better
+            approach for remembering persistent values?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/lightnb11&quot;&gt; /u/lightnb11 &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hkitel/how_to_remember_persistent_values_across_multiple/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hkitel/how_to_remember_persistent_values_across_multiple/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hkitel</id>
+        <link
+            href="https://www.reddit.com/r/ansible/comments/1hkitel/how_to_remember_persistent_values_across_multiple/" />
+        <updated>2024-12-23T07:38:10+00:00</updated>
+        <published>2024-12-23T07:38:10+00:00</published>
+        <title>How to remember persistent values across multiple runs of the same playbook?</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/Advanced_Vehicle_636</name>
+            <uri>https://www.reddit.com/user/Advanced_Vehicle_636</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hey
+            Folks,&lt;/p&gt; &lt;p&gt;Basically, the title. We&amp;#39;ll be deploying AAP 2.5 (with
+            the sub components and EDA) in a containerized install. I&amp;#39;ve googled variations
+            of that question but only get results for managing MySQL instances with Ansible, not
+            deploying Ansible with a MySQL DB instead of PG-SQL.&lt;/p&gt; &lt;p&gt;Background: We
+            already have some MySQL DBs running related programs in our environment that are
+            hardened, maintained, and have SLA-back HA enabled. I say related systems -
+            they&amp;#39;re not RH systems. But they will be tied to Ansible and EDA. I&amp;#39;m
+            hoping to utilize that DB to run the DB portion of Ansible (containerized) rather than
+            deploying another DBaaS offering or creating two DBs, one for each server, and syncing
+            them together. Has anyone used MySQL as the DB backend for Ansible Automation
+            Platform?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32;
+            &lt;a href=&quot;https://www.reddit.com/user/Advanced_Vehicle_636&quot;&gt;
+            /u/Advanced_Vehicle_636 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hklui4/deploying_ansible_with_mysql/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hklui4/deploying_ansible_with_mysql/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hklui4</id>
+        <link href="https://www.reddit.com/r/ansible/comments/1hklui4/deploying_ansible_with_mysql/" />
+        <updated>2024-12-23T11:29:56+00:00</updated>
+        <published>2024-12-23T11:29:56+00:00</published>
+        <title>Deploying Ansible with MySQL</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/stephenph</name>
+            <uri>https://www.reddit.com/user/stephenph</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I am
+            testing out a playbook that needs to sudo. The system I am testing it on is really a
+            thinkpad with fingerprint authentication with the fingerprint sensor. I am getting an
+            error where ansible is waiting on the password. I suspect that fprintd or sshd is
+            expecting a fingerprint so gets into a standoff with ansible ... Over an hour and no
+            timeout... &lt;/p&gt; &lt;p&gt;When I sudo, the laptop does ask for my fingerprint, but
+            it will fail over to password if it does not recognize my fingerprint not sure if there
+            is a timeout In that situation. &lt;/p&gt; &lt;p&gt;There is not a lot I have been able
+            to find for a solution, although I did see one fprintd discussion that recognized the
+            issue with ssh logins and supposedly there was a fix that addressed that. &lt;/p&gt;
+            &lt;p&gt;I am out of ideas, I really don&amp;#39;t want to disable fingerprint auth.
+            &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/stephenph&quot;&gt; /u/stephenph &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hkfcst/unable_to_become_superuser/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hkfcst/unable_to_become_superuser/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hkfcst</id>
+        <link href="https://www.reddit.com/r/ansible/comments/1hkfcst/unable_to_become_superuser/" />
+        <updated>2024-12-23T03:47:54+00:00</updated>
+        <published>2024-12-23T03:47:54+00:00</published>
+        <title>Unable to become superuser</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/andr0m3da1337</name>
+            <uri>https://www.reddit.com/user/andr0m3da1337</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Currently
+            I&amp;#39;m using the playbook&lt;/p&gt; &lt;p&gt;``` - name: maintain config and
+            backout if validation after change fails&lt;/p&gt; &lt;p&gt;block:&lt;/p&gt; &lt;ul&gt;
+            &lt;li&gt;&lt;p&gt;name: run validation, this will change a lot as needed. We assume it
+            returns an error when not passing, use &lt;code&gt;failed_when&lt;/code&gt; if
+            otherwise. shell: run_validation_commmand become: true become_user: requiredbyapp
+            environment: WEIRD_REQUIREMENT: 1 when: updated is changed&lt;/p&gt;
+            &lt;p&gt;rescue:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;name: restore backup file to original,
+            in the hope the previous configuration was working. copy: remote_src: true dest: /x/y/z
+            src: &amp;quot;{{ updated[&amp;#39;backup_file&amp;#39;] }}&amp;quot; when: updated is
+            changed&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;always: - name: We choose to always delete
+            backup, but could copy or move, or only delete in rescue. file: path: &amp;quot;{{
+            updated[&amp;#39;backup_file&amp;#39;] }}&amp;quot; state: absent when: updated is
+            changed ```&lt;/p&gt; &lt;p&gt;as a normal task (import in a playbook) and it
+            works.&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;I wanna use this as handler ( in
+            handler/main.yml) but seems it is not supported?&lt;/p&gt; &lt;p&gt;If I put that that
+            inside handler/main.yml, only block is getting executed and not the rescue and
+            always.&lt;/p&gt; &lt;p&gt;Any Idea how can we use block, rescue and always in a
+            handler?&lt;/p&gt; &lt;p&gt;Thank you.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt;
+            &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/andr0m3da1337&quot;&gt; /u/andr0m3da1337
+            &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hk0tr5/block_rescue_and_always_in_a_handler/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hk0tr5/block_rescue_and_always_in_a_handler/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hk0tr5</id>
+        <link
+            href="https://www.reddit.com/r/ansible/comments/1hk0tr5/block_rescue_and_always_in_a_handler/" />
+        <updated>2024-12-22T15:36:09+00:00</updated>
+        <published>2024-12-22T15:36:09+00:00</published>
+        <title>Block, rescue and always in a handler?</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/dsp3000</name>
+            <uri>https://www.reddit.com/user/dsp3000</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hi
+            everyone, i&amp;#39;ve been tasked with running a prebuilt ansible automation that
+            creates VM&amp;#39;s within vcenter and then logs into them to do some stuff such as
+            populate ssh keys and so on. the only caveat is that the guest VM&amp;#39;s on this
+            system are controlled by LDAP. if i create a local account on the VM&amp;#39;s
+            i&amp;#39;m able to log into them just fine using the
+            &lt;code&gt;community.vmware.vmware_guest&lt;/code&gt; plugin but if i swap it out for
+            my LDAP account i get an error that it&amp;#39;s failing to authenticate. Is there any
+            additional setup that needs to be done to have the playbook handle LDAP? I verified i
+            can log in with the ldap credentials to the VM via vcenter and also thru ssh where my
+            ansible script is running for good measure.&lt;/p&gt; &lt;p&gt;the VM&amp;#39;s are
+            Redhat 8 and it&amp;#39;s controlled by microsoft active directory&lt;/p&gt;
+            &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/dsp3000&quot;&gt; /u/dsp3000 &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hiphe8/ansible_and_vmware_using_an_ldap_account_to_log/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hiphe8/ansible_and_vmware_using_an_ldap_account_to_log/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hiphe8</id>
+        <link
+            href="https://www.reddit.com/r/ansible/comments/1hiphe8/ansible_and_vmware_using_an_ldap_account_to_log/" />
+        <updated>2024-12-20T17:53:40+00:00</updated>
+        <published>2024-12-20T17:53:40+00:00</published>
+        <title>Ansible and Vmware - using an ldap account to log into a vm</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/motorleagueuk-prod</name>
+            <uri>https://www.reddit.com/user/motorleagueuk-prod</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I have
+            approx 120 Alma servers that I manage patching for. I use Foreman to manage software
+            versions, and Ansible via AWX to perform the updates.&lt;/p&gt; &lt;p&gt;A simplified
+            version of my Patching Lifecycles and Batches are as follows:&lt;/p&gt;
+            &lt;p&gt;&lt;code&gt;Canaries&lt;/code&gt;&lt;br/&gt; &lt;code&gt;- (Two stand alone
+            canary boxes)&lt;/code&gt;&lt;/p&gt; &lt;p&gt;&lt;code&gt;PreProd Day 1 (Internal team
+            test boxes)&lt;/code&gt;&lt;br/&gt; &lt;code&gt;- (Four 2 node pairs (nginx,
+            postfix.haproxy)&lt;/code&gt;&lt;br/&gt; &lt;code&gt;- (Two 3 node clusters redis,
+            rmq)&lt;/code&gt;&lt;/p&gt; &lt;p&gt;&lt;code&gt;PreProd Day 2 (dev and other
+            stakeholder facing boxes)&lt;/code&gt;&lt;br/&gt; &lt;code&gt;- (small number of stand
+            alones)&lt;/code&gt;&lt;br/&gt; &lt;code&gt;- (Eight 2 node pairs (nginx, postfix,
+            haproxy)&lt;/code&gt;&lt;br/&gt; &lt;code&gt;- (Six 3 node clusters redis,
+            rmq)&lt;/code&gt;&lt;br/&gt; &lt;code&gt;- (One 3 node mysql cluster -
+            QA)&lt;/code&gt;&lt;/p&gt; &lt;p&gt;&lt;code&gt;PreProd Day 3&lt;/code&gt;&lt;br/&gt;
+            &lt;code&gt;- (One 3 node mysql cluster - STG)&lt;/code&gt;&lt;/p&gt;
+            &lt;p&gt;&lt;code&gt;Prod Day 1&lt;/code&gt;&lt;br/&gt; &lt;code&gt;- (small number of
+            stand alones)&lt;/code&gt;&lt;br/&gt; &lt;code&gt;- (Eight 2 node pairs (nginx,
+            postfix.haproxy)&lt;/code&gt;&lt;br/&gt; &lt;code&gt;- (Four node clusters redis,
+            rmq)&lt;/code&gt;&lt;/p&gt; &lt;p&gt;&lt;code&gt;Prod Day 2&lt;/code&gt;&lt;br/&gt;
+            &lt;code&gt;- (One 3 node mysql cluster)&lt;/code&gt;&lt;/p&gt; &lt;p&gt;So for example
+            one batch would consist of 3 individual playbooks runs like the following to ensure only
+            one node from each cluster is patched at any one time:&lt;/p&gt;
+            &lt;p&gt;&lt;code&gt;rmq01 cust1red01 cust2red03 cust3red02&lt;/code&gt;&lt;br/&gt;
+            &lt;code&gt;rmq02 cust1red02 cust2red01 cust3red03&lt;/code&gt;&lt;br/&gt;
+            &lt;code&gt;rmq03 cust1red03 cust2red02 cust3red01&lt;/code&gt;&lt;/p&gt; &lt;p&gt;I
+            tried using host groups within AWX to organise the boxes into separate groups of
+            lifecycles and major OS versions previously, but I was doing this manually at the rime
+            and found the process at the time quite fiddly and prone to human error, so for patching
+            I started maintaining a text list of batches which I&amp;#39;d update and process
+            manually.&lt;/p&gt; &lt;p&gt;The estate has grown however and this manual process is
+            becoming unwieldy, so I want to take another look.&lt;/p&gt; &lt;p&gt;I could run
+            everything in serial but I like to keep eyes on the patching process for any failures,
+            and I felt like if I just left it to chug away in the background I&amp;#39;d potentially
+            get distracted (we had until recently had an older version of AWX that didn&amp;#39;t
+            support e-mail notifications, although I want to get this, and hopefully webhook
+            notifications to Teams configured on the new AWX24 box I&amp;#39;m currently building to
+            flag any failed playbooks/updates.&lt;/p&gt; &lt;p&gt;So my question is can anybody
+            offer any advise on how should I organise these hosts in terms of lifecycle, patching
+            day and batches within Ansible?&lt;/p&gt; &lt;p&gt;My current thoughts are perhaps a
+            group hierarchy such as the following, and potentially set a variable for the
+            sequence/patching order within the patch. Or I could make greater use of running the
+            patching playbooks in serial.&lt;/p&gt;
+            &lt;p&gt;&lt;code&gt;canaries&lt;/code&gt;&lt;br/&gt;
+            &lt;code&gt;preprod-day1&lt;/code&gt;&lt;br/&gt; &lt;code&gt;- batch
+            1&lt;/code&gt;&lt;br/&gt; &lt;code&gt;- batch 2&lt;/code&gt;&lt;br/&gt; &lt;code&gt;-
+            batch 3&lt;/code&gt;&lt;br/&gt; &lt;code&gt;prod&lt;/code&gt;&lt;br/&gt;
+            &lt;code&gt;-batch 1&lt;/code&gt;&lt;br/&gt; &lt;code&gt;- batch
+            2&lt;/code&gt;&lt;/p&gt; &lt;p&gt;Another possible option might be to incorporate using
+            hostname conventions (all our boxes have a 3 character role identifier such as
+            &amp;quot;hap or &amp;quot;red&amp;quot;, by a 2 digit numerical value), although
+            dynamically calculating batch order might prove fiddly given that some services are in
+            clusters of 2 and some are in clusters of 3. &lt;/p&gt; &lt;p&gt;I also want to automate
+            organisation of the group and any related vars during deployment so that maintaining the
+            batches is no longer a manual process.. At present hosts are automatically added to a
+            single &amp;quot;Alma&amp;quot; Inventory using the awx.awx module at time of deployment
+            - Ideally I don&amp;#39;t want to subdivide the hosts into separate Inventories as there
+            are times I need to run a grep or other search across the entire estate in one go, but
+            I&amp;#39;d consider it if there was sufficient benefit).&lt;/p&gt; &lt;p&gt;Can anybody
+            offer any advice on how to best go about organising my infrastructure/any other tips for
+            automating my patching schedule?&lt;/p&gt; &lt;p&gt;Many thanks.&lt;/p&gt;
+            &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/motorleagueuk-prod&quot;&gt;
+            /u/motorleagueuk-prod &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hi65l4/strategy_for_organising_servers_into_batches_for/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hi65l4/strategy_for_organising_servers_into_batches_for/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hi65l4</id>
+        <link
+            href="https://www.reddit.com/r/ansible/comments/1hi65l4/strategy_for_organising_servers_into_batches_for/" />
+        <updated>2024-12-19T23:24:48+00:00</updated>
+        <published>2024-12-19T23:24:48+00:00</published>
+        <title>Strategy For Organising Servers into Batches for Patching with Ansible/AWX?</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/Teacup91</name>
+            <uri>https://www.reddit.com/user/Teacup91</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div
+            class=&quot;md&quot;&gt;&lt;pre&gt;&lt;code&gt;- name: Delete existing schedules
+            awx.awx.schedule: controller_host: https://domain.com controller_oauthtoken:
+            &amp;quot;{{ awx_internal_automator_password }}&amp;quot; name: &amp;quot;{{
+            schedule_name }}&amp;quot; unified_job_template: &amp;quot;template_name&amp;quot;
+            state: absent &lt;/code&gt;&lt;/pre&gt; &lt;p&gt;I can run this playbook fine locally on
+            my machine. However, If I run this playbook on AWX itself, it times out&lt;/p&gt;
+            &lt;pre&gt;&lt;code&gt;There was an unknown error when trying to connect to
+            https://domain.com/api/v2/unified_job_templates/?name=template_name: URLError
+            &amp;lt;urlopen error timed out&amp;gt;&amp;quot; &lt;/code&gt;&lt;/pre&gt; &lt;p&gt;I
+            even run a debug task with `curl` and receive the same result&lt;/p&gt;
+            &lt;pre&gt;&lt;code&gt;curl: (28) Failed to connect to domain.com port 443: Connection
+            timed out &lt;/code&gt;&lt;/pre&gt; &lt;p&gt;I&amp;#39;m at lost of what&amp;#39;s
+            happening. Appreciate anybody&amp;#39;s insights.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON
+            --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/Teacup91&quot;&gt; /u/Teacup91 &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hi22bc/connection_timeout_on_playbook_run_on_awx_to/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hi22bc/connection_timeout_on_playbook_run_on_awx_to/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hi22bc</id>
+        <link
+            href="https://www.reddit.com/r/ansible/comments/1hi22bc/connection_timeout_on_playbook_run_on_awx_to/" />
+        <updated>2024-12-19T20:20:05+00:00</updated>
+        <published>2024-12-19T20:20:05+00:00</published>
+        <title>Connection timeout on playbook run on AWX to target itself</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/notlazysusan</name>
+            <uri>https://www.reddit.com/user/notlazysusan</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div
+            class=&quot;md&quot;&gt;&lt;p&gt;[noob]&lt;/p&gt; &lt;p&gt;If I have ~100 files
+            templates/files to copy over to target host, is a task to ensure the directory exists to
+            then use the copy/template module as another task &lt;em&gt;for each file&lt;/em&gt;
+            still a recommended approach? is it significantly slower than to somehow loop over all
+            the files to create the necessary directories as one task and then copy/template the
+            files in another task? Maybe the synchronize module would work here, but it
+            wouldn&amp;#39;t handle the templates.&lt;/p&gt; &lt;p&gt;When running the playbook, if
+            using the first approach of ensuring dir exists followed by copying over the file, then
+            it shows the success/failure of each &amp;quot;ensure dir exists&amp;quot; task which is
+            quite noisy (I would have like 200 tasks to see in the output). I&amp;#39;m not
+            interested in that since the main goal is ensuring the file exists at a particular
+            location and the success of that implies the directories exist on the target already.
+            Would it be unreasonable to somehow avoid seeing uninteresting tasks except if they
+            fail?&lt;/p&gt; &lt;p&gt;How to loop over a list of files to create all the necessary
+            directories?&lt;/p&gt; &lt;p&gt;For context, these are system configs I want to copy
+            over to new servers to set them up.&lt;/p&gt; &lt;hr/&gt; &lt;p&gt;P.S. Is it weird to
+            have roles to have only 1 or 2 tasks? E.g. to set up a service I only need to install a
+            package and copy over its config. I know roles are generally a &lt;em&gt;collection of
+            tasks&lt;/em&gt; and that they tend to be re-used. The latter is why I&amp;#39;m
+            thinking a role makes sense since on some workstations I also want to run these sets of
+            tasks (maybe different implementations like package names or only
+            &lt;em&gt;optionally&lt;/em&gt; ensuring service exists depending on whether
+            it&amp;#39;s server or workstation). Or maybe a role is a little more than simply
+            &amp;quot;a collection of tasks to be re-used&amp;quot; and there&amp;#39;s a more
+            efficient or simpler alternative for such simple roles I had in mind.&lt;/p&gt;
+            &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a
+            href=&quot;https://www.reddit.com/user/notlazysusan&quot;&gt; /u/notlazysusan &lt;/a&gt;
+            &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hhaqxs/copying_filestemplates_to_target_ensuring/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hhaqxs/copying_filestemplates_to_target_ensuring/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hhaqxs</id>
+        <link
+            href="https://www.reddit.com/r/ansible/comments/1hhaqxs/copying_filestemplates_to_target_ensuring/" />
+        <updated>2024-12-18T20:21:20+00:00</updated>
+        <published>2024-12-18T20:21:20+00:00</published>
+        <title>Copying files/templates to target ensuring directories exist first</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/herr_amish</name>
+            <uri>https://www.reddit.com/user/herr_amish</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hello
+            all,&lt;/p&gt; &lt;p&gt;Been having issues trying to work out an issue specified in the
+            post title above, the TL;dr is that no matter what I try to do, the custom EE cannot see
+            the exposed path as I would hope.&lt;/p&gt; &lt;p&gt;I am running a new aap-2.5-6
+            containerized setup inside of an AWS EC2 instance and the paths mentioned below are
+            mounted to my tower instance like so.&lt;/p&gt;
+            &lt;pre&gt;&lt;code&gt;fs-asdf3832.efs.us-east-1.amazonaws.com:/ nfs4 8.0E 32G 8.0E 1%
+            /repo fs-fdsa1234.efs.us-east-1.amazonaws.com:/ nfs4 8.0E 58G 8.0E 1% /config
+            fs-fdsa3321.efs.us-east-1.amazonaws.com:/ nfs4 8.0E 3.5G 8.0E 1% /data
+            &lt;/code&gt;&lt;/pre&gt; &lt;p&gt;This may be an issue with SELINUX perms, but I have
+            set that to permissive while I am testing, so I don&amp;#39;t think that is the issue.
+            &lt;/p&gt; &lt;p&gt;in the controller I have the following set under SETTINGS &amp;gt;
+            JOBS&lt;/p&gt; &lt;pre&gt;&lt;code&gt;Paths to expose to isolated jobs
+            /config:/config/:z # volume mount does not work /etc/pki/ca-trust:/etc/pki/ca-trust:O
+            /data:/data/:z # volume mount does not work /repo:/repo/:z # volume mount does not work
+            /usr/share/pki:/usr/share/pki:O &lt;/code&gt;&lt;/pre&gt; &lt;p&gt;I know that in the 3
+            lines notated above the lowercase z may not be right, but no matter if I
+            specify&lt;/p&gt; &lt;p&gt;:O&lt;/p&gt; &lt;p&gt;:rw&lt;/p&gt; &lt;p&gt;:ro&lt;/p&gt;
+            &lt;p&gt;I do not see any data from the host present in the EE. I am attempting to test
+            it with the following playbook.&lt;/p&gt; &lt;pre&gt;&lt;code&gt;- hosts: all tasks: -
+            shell: ls -lZa /config/ register: shell_1 ignore_errors: true delegate_to: localhost -
+            debug: msg: &amp;quot;{{ shell_1 }}&amp;quot; - shell: df -hT register: shell_2
+            ignore_errors: true delegate_to: localhost - debug: msg: &amp;quot;{{ shell_2
+            }}&amp;quot; - shell: ls -lZr /config register: ls_lzr ignore_errors: true delegate_to:
+            localhost - debug: var=ls_lzr - name: Fetching the file from Remote host to Ansible
+            Controller fetch: src: &amp;quot;/home/tower/file.txt&amp;quot; dest:
+            &amp;quot;/config/file.txt&amp;quot; owner: awx group: awx mode: 0775 flat: yes
+            ignore_errors: true - shell: echo &amp;#39;asdf&amp;#39; &amp;gt; /config/file_write.txt
+            register: write delegate_to: localhost - debug: var=write &lt;/code&gt;&lt;/pre&gt;
+            &lt;p&gt;that playbook gives me the following output:&lt;/p&gt;
+            &lt;pre&gt;&lt;code&gt;changed: true stdout: &amp;gt;- Filesystem Type Size Used Avail
+            Use% Mounted on overlay overlay 99G 27G 72G 28% / tmpfs tmpfs 64M 0 64M 0% /dev
+            /dev/nvme0n1p4 xfs 99G 27G 72G 28% /runner tmpfs tmpfs 3.1G 2.0M 3.1G 1% /etc/hosts shm
+            tmpfs 63M 148K 63M 1% /dev/shm
+            /home/tower/aap/containers/storage/overlay-containers/339bce4a46e8c5ea1ad8f16f996dd3b5f9be35cf39bc20cd36040967523532bb/userdata/overlay/1206100761/merge
+            overlay 99G 27G 72G 28% /etc/pki/ca-trust
+            /home/tower/aap/containers/storage/overlay-containers/339bce4a46e8c5ea1ad8f16f996dd3b5f9be35cf39bc20cd36040967523532bb/userdata/overlay/3199956027/merge
+            overlay 99G 27G 72G 28% /usr/share/pki devtmpfs devtmpfs 4.0M 0 4.0M 0% /dev/tty stderr:
+            &amp;#39;&amp;#39; rc: 0 cmd: df -hT start: &amp;#39;2024-12-18 16:42:28.510135&amp;#39;
+            end: &amp;#39;2024-12-18 16:42:28.517777&amp;#39; delta:
+            &amp;#39;0:00:00.007642&amp;#39; msg: &amp;#39;&amp;#39; invocation: module_args:
+            _raw_params: df -hT _uses_shell: true expand_argument_vars: true stdin_add_newline: true
+            strip_empty_ends: true argv: null chdir: null executable: null creates: null removes:
+            null stdin: null stdout_lines: - &amp;gt;- Filesystem Type Size Used Avail Use% Mounted
+            on - &amp;gt;- overlay overlay 99G 27G 72G 28% / - &amp;gt;- tmpfs tmpfs 64M 0 64M 0%
+            /dev - &amp;gt;- /dev/nvme0n1p4 xfs 99G 27G 72G 28% /runner - &amp;gt;- tmpfs tmpfs 3.1G
+            2.0M 3.1G 1% /etc/hosts - &amp;gt;- shm tmpfs 63M 148K 63M 1% /dev/shm - &amp;gt;-
+            /home/tower/aap/containers/storage/overlay-containers/339bce4a46e8c5ea1ad8f16f996dd3b5f9be35cf39bc20cd36040967523532bb/userdata/overlay/1206100761/merge
+            overlay 99G 27G 72G 28% /etc/pki/ca-trust - &amp;gt;-
+            /home/tower/aap/containers/storage/overlay-containers/339bce4a46e8c5ea1ad8f16f996dd3b5f9be35cf39bc20cd36040967523532bb/userdata/overlay/3199956027/merge
+            overlay 99G 27G 72G 28% /usr/share/pki - &amp;gt;- devtmpfs devtmpfs 4.0M 0 4.0M 0%
+            /dev/tty stderr_lines: [] _ansible_no_log: false _ansible_delegated_vars: ansible_host:
+            localhost ansible_port: null ansible_user: tower ansible_connection: local
+            &lt;/code&gt;&lt;/pre&gt; &lt;p&gt;I just don&amp;#39;t know what is wrong here as to
+            why those paths are not mounted as I expect.&lt;/p&gt; &lt;p&gt;Any assistance that can
+            be provided to help me work out whatwhere I have messed up configration or any other
+            requests for information, please throw them out to me and I will do my damnedest to
+            provide it so I can get past this issue as until I do I will not be able to use 90% of
+            my ansible roles until can expose the paths to the container and pull files that are not
+            stored in my SCM as that is just not our current workflow and I really don&amp;#39;t
+            want to have to rearchitect a bulk majority of things to work around it.&lt;/p&gt;
+            &lt;p&gt;Thank you all&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by
+            &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/herr_amish&quot;&gt;
+            /u/herr_amish &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hh5w2q/aap_25_containerized_exposing_host_paths_to/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hh5w2q/aap_25_containerized_exposing_host_paths_to/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hh5w2q</id>
+        <link
+            href="https://www.reddit.com/r/ansible/comments/1hh5w2q/aap_25_containerized_exposing_host_paths_to/" />
+        <updated>2024-12-18T16:52:46+00:00</updated>
+        <published>2024-12-18T16:52:46+00:00</published>
+        <title>AAP 2.5 Containerized Exposing Host Paths to custom EE</title>
+    </entry>
+    <entry>
+        <author>
+            <name>/u/JAdkins11</name>
+            <uri>https://www.reddit.com/user/JAdkins11</uri>
+        </author>
+        <category term="ansible" label="r/ansible" />
+        <content type="html">
+            &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hi guys,
+            I have been playing with Ansible in the CLI for quite some time and decided to learn AAP
+            and see what it’s all about. However, I am wondering if anyone can help me out. I have
+            tried to install the All-In-One bundle for days. I worked through several issues on the
+            first day but keep getting stuck now. The issue I have now appear to be with the process
+            of starting the Podman containers. The ansible script times out waiting for the gateway
+            to start. Of the 4 containers, Postgres is the only one that starts and when I try to
+            manually start the others, I get crun: mount sysfs to sys operation not permitted. I
+            know this is to do with podman, which I am not well versed in. I have read all the docs
+            and have seen where others have deployed this easily. Just wondering if anyone of you
+            guys have seen these issue and can offer any advice.&lt;/p&gt; &lt;p&gt;Host is RHEL 9.5
+            and trying to deploy AAP 2.5&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32;
+            submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/JAdkins11&quot;&gt;
+            /u/JAdkins11 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hg9p8n/aap_25_containerized_install/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt;
+            &amp;#32; &lt;span&gt;&lt;a
+            href=&quot;https://www.reddit.com/r/ansible/comments/1hg9p8n/aap_25_containerized_install/&quot;&gt;[hozzászólás]&lt;/a&gt;&lt;/span&gt;</content>
+        <id>t3_1hg9p8n</id>
+        <link href="https://www.reddit.com/r/ansible/comments/1hg9p8n/aap_25_containerized_install/" />
+        <updated>2024-12-17T12:37:08+00:00</updated>
+        <published>2024-12-17T12:37:08+00:00</published>
+        <title>AAP 2.5 Containerized Install</title>
+    </entry>
+</feed>

@@ -1,0 +1,16 @@
+youtube:
+- UC1R3yteq3HoSUIHQ7hp65XQ # Nessaj gaming
+- UCHnd8KvQyMGU0DAlJSuYwhw # Nessaj reacts
+- UCcSAt9uIqRHK8dEV2wVY1dQ # Nessaj
+reddit:
+- ansible/.rss
+- selfhosted/.rss
+- rust/.rss
+standard:
+- https://www.gsplus.hu/site/rss/rss.xml
+- https://thinkaboutit.tech/feed/
+crunchyroll: true
+kafka:
+  server: atihome.lan:9092
+  topic: rss-feed
+  consumer_group: rss-feed-consumer

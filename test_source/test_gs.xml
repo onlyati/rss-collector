@@ -1,0 +1,448 @@
+<rss xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+    <channel>
+        <title>GS Hírek</title>
+        <link>https://www.gsplus.hu</link>
+        <description>Napi hírek a számítógépes játékok világából!</description>
+        <lastBuildDate>Sat, 28 Dec 2024 21:00:01 +0100</lastBuildDate>
+        <language>hu</language>
+        <image>
+            <title>GameStar</title>
+            <link>https://www.gsplus.hu</link>
+            <url>https://www.gsplus.hu/site/rss/logo.png</url>
+        </image>
+        <item>
+            <title>Hiba lépett fel a Windows legújabb frissítésénél – a jövőbeli javítások is
+                érintettek lehetnek</title>
+            <link>
+<![CDATA[ https://www.pcwplus.hu/pcwlite/hiba-lepett-fel-a-windows-legujabb-frissitesenel-a-jovobeli-javitasok-is-erintettek-lehetnek-362061.html ]]>
+</link>
+            <description>
+<![CDATA[ A probléma a külső adathordozókról frissen telepített Windows 11 rendszereket érinti. ]]>
+</description>
+            <author>Varga Kristóf</author>
+            <category>infopctech</category>
+            <pubDate>Sat, 28 Dec 2024 19:40:13 +0100</pubDate>
+            <guid>
+                https://www.pcwplus.hu/pcwlite/hiba-lepett-fel-a-windows-legujabb-frissitesenel-a-jovobeli-javitasok-is-erintettek-lehetnek-362061.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2412/28/windows_11_130432_1_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Néhány napig ingyen nyúzhatod PlayStation 5-ön a Test Drive Unlimited Solar
+                Crownt</title>
+            <link>
+<![CDATA[ https://www.gsplus.hu/ingyen-jatekok/nehany-napig-ingyen-nyuzhatod-playstation-5on-a-test-drive-unlimited-solar-crownt-362069.html ]]>
+</link>
+            <description>
+<![CDATA[ Amennyiben vásárláson töröd a fejed, előtte mindenképpen vidd el egy próbakörre a Nacon és a KT Racing újdonságát. ]]>
+</description>
+            <author>Chavalier</author>
+            <category>infopctech</category>
+            <pubDate>Sat, 28 Dec 2024 19:36:37 +0100</pubDate>
+            <guid>
+                https://www.gsplus.hu/ingyen-jatekok/nehany-napig-ingyen-nyuzhatod-playstation-5on-a-test-drive-unlimited-solar-crownt-362069.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2307/04/test_drive_unlimited_solar_crown_test_drive_175629_1_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Keanu Reeves kételkedik benne, hogy kibírná a John Wick 5 forgatását</title>
+            <link>
+<![CDATA[ https://www.gsplus.hu/masvilag/keanu-reeves-ketelkedik-benne-hogy-kibirna-a-john-wick-5-forgatasat-362067.html ]]>
+</link>
+            <description>
+<![CDATA[ A szíve még vinné előre, de a teste már nem a régi. ]]>
+</description>
+            <author>Chavalier</author>
+            <category>infopctech</category>
+            <pubDate>Sat, 28 Dec 2024 18:17:37 +0100</pubDate>
+            <guid>
+                https://www.gsplus.hu/masvilag/keanu-reeves-ketelkedik-benne-hogy-kibirna-a-john-wick-5-forgatasat-362067.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2305/27/john_wick_4_john_wick_4_felvonas_092630_1_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Az Epic Games Store mai ingyenes játéka szinte vadonatúj</title>
+            <link>
+<![CDATA[ https://www.gsplus.hu/ingyen-jatekok/az-epic-games-store-mai-ingyenes-jateka-szinte-vadonatuj-362056.html ]]>
+</link>
+            <description>
+<![CDATA[ Még három hónap sem telt el az aktuális ajándék megjelenése óta. ]]>
+</description>
+            <author>Chavalier</author>
+            <category>infopctech</category>
+            <pubDate>Sat, 28 Dec 2024 17:06:11 +0100</pubDate>
+            <guid>
+                https://www.gsplus.hu/ingyen-jatekok/az-epic-games-store-mai-ingyenes-jateka-szinte-vadonatuj-362056.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2412/06/epic_games_store_124200_1_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>A Nosferatu rendezőjétől jöhet David Bowie filmje, a Fantasztikus labirintus
+                folytatása</title>
+            <link>
+<![CDATA[ https://www.gsplus.hu/masvilag/a-nosferatu-rendezojetol-johet-david-bowie-filmje-a-fantasztikus-labirintus-folytatasa-362063.html ]]>
+</link>
+            <description>
+<![CDATA[ Úgy tűnik, hogy Robert Eggers váltja Scott Derricksont a hányatott sorsú projekt élén. ]]>
+</description>
+            <author>Chavalier</author>
+            <category>infopctech</category>
+            <pubDate>Sat, 28 Dec 2024 16:31:46 +0100</pubDate>
+            <guid>
+                https://www.gsplus.hu/masvilag/a-nosferatu-rendezojetol-johet-david-bowie-filmje-a-fantasztikus-labirintus-folytatasa-362063.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2412/28/labyrinth_fantasztikus_labirintus_163612_2_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Iszonyatosan drága lehet az RTX 5080</title>
+            <link>
+<![CDATA[ https://www.pcwplus.hu/pcwmaster/iszonyatosan-draga-lehet-az-rtx-5080-362052.html ]]>
+</link>
+            <description>
+<![CDATA[ A szivárgásokat látszólag senki sem állíthatja meg, ami jó hír nekünk, de kevésbé jó hír az Nvidiának. ]]>
+</description>
+            <author>Ledneczki József</author>
+            <category>infopctech</category>
+            <pubDate>Sat, 28 Dec 2024 16:28:41 +0100</pubDate>
+            <guid>https://www.pcwplus.hu/pcwmaster/iszonyatosan-draga-lehet-az-rtx-5080-362052.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2407/21/nvidia_geforce_rtx_5090_videokartya_113724_1_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>A Rockstar Games eredetileg sokkal tartalmasabb GTA III-at szeretett volna kiadni
+                annál, mint amit kaptunk</title>
+            <link>
+<![CDATA[ https://www.gsplus.hu/hir/a-rockstar-games-eredetileg-sokkal-tartalmasabb-gta-iiiat-szeretett-volna-kiadni-annal-mint-amit-kaptunk-362044.html ]]>
+</link>
+            <description>
+<![CDATA[ Sokan még csak nem is sejtették, hogy két online játékmóddal érkezhetett volna az első 3D-s Grand Theft Auto. ]]>
+</description>
+            <author>Hunter_GS</author>
+            <category>infopctech</category>
+            <pubDate>Sat, 28 Dec 2024 15:20:09 +0100</pubDate>
+            <guid>
+                https://www.gsplus.hu/hir/a-rockstar-games-eredetileg-sokkal-tartalmasabb-gta-iiiat-szeretett-volna-kiadni-annal-mint-amit-kaptunk-362044.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2405/26/grand_theft_auto_iii_123508_2_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>A Silent Hill 2 remake rendezője horrorjátékot csinálna A Gyűrűk Urából</title>
+            <link>
+<![CDATA[ https://www.gsplus.hu/hir/a-silent-hill-2-remake-rendezoje-horrort-csinalna-a-gyuruk-urabol-362040.html ]]>
+</link>
+            <description>
+<![CDATA[ Ha a Micimackóból ki lehetett hozni egy rémtörténetet, akkor ebből miért is ne lehetne. ]]>
+</description>
+            <author>Hunter_GS</author>
+            <category>infopctech</category>
+            <pubDate>Sat, 28 Dec 2024 14:09:55 +0100</pubDate>
+            <guid>
+                https://www.gsplus.hu/hir/a-silent-hill-2-remake-rendezoje-horrort-csinalna-a-gyuruk-urabol-362040.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2412/28/a_gyuruk_ura_a_gyuru_szovetsege_the_lord_of_the_rings_the_fellowship_of_the_ring_124007_1_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Mától már csak USB-C csatlakozóval ellátott telefonokat lehet forgalomba hozni az
+                Európai Unió területén</title>
+            <link>
+<![CDATA[ https://www.pcwplus.hu/pcwlite/matol-mar-csak-usbc-csatlakozoval-ellatott-telefonokat-lehet-forgalomba-hozni-az-europai-unio-teruleten-362055.html ]]>
+</link>
+            <description>
+<![CDATA[ Ma lép hatályba a rendelet, ami az Apple legolcsóbb telefonját veszélyeztetett állatfajjá változtatta. ]]>
+</description>
+            <author>Ledneczki József</author>
+            <category>infopctech</category>
+            <pubDate>Sat, 28 Dec 2024 13:20:49 +0100</pubDate>
+            <guid>
+                https://www.pcwplus.hu/pcwlite/matol-mar-csak-usbc-csatlakozoval-ellatott-telefonokat-lehet-forgalomba-hozni-az-europai-unio-teruleten-362055.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2212/21/iphone_se_2022_094845_1_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Ez a szuperhős lehet a Marvel Rivals következő karaktere</title>
+            <link>
+<![CDATA[ https://www.gsplus.hu/hir/ez-a-szuperhos-lehet-a-marvel-rivals-kovetkezo-karaktere-362045.html ]]>
+</link>
+            <description>
+<![CDATA[ A Fantasztikus Négyes nagyszájú tűzvarázslója már biztosan úton van a lövöldébe. ]]>
+</description>
+            <author>Hunter_GS</author>
+            <category>infopctech</category>
+            <pubDate>Sat, 28 Dec 2024 12:55:18 +0100</pubDate>
+            <guid>
+                https://www.gsplus.hu/hir/ez-a-szuperhos-lehet-a-marvel-rivals-kovetkezo-karaktere-362045.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2405/31/marvel_rivals_netease_074815_1_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Ilyen lesz a magyar fejlesztésű kalandjáték, az Elflock játékmenete</title>
+            <link>
+<![CDATA[ https://www.gsplus.hu/magyarjatek/ilyen-lesz-a-magyar-fejlesztesu-kalandjatek-az-elflock-jatekmenete-362057.html ]]>
+</link>
+            <description>
+<![CDATA[ Egy döntések vezérelte, sztorifókuszú kalandjáték vár ránk történelmi körítéssel és egy király elleni összeesküvéssel. ]]>
+</description>
+            <author>Hunter_GS</author>
+            <category>infopctech</category>
+            <pubDate>Sat, 28 Dec 2024 11:41:21 +0100</pubDate>
+            <guid>
+                https://www.gsplus.hu/magyarjatek/ilyen-lesz-a-magyar-fejlesztesu-kalandjatek-az-elflock-jatekmenete-362057.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2412/28/elflock_novasphera_studio_114234_8_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Ezzel játszunk az év végén: Astro Bot és Indiana Jones and the Great Circle</title>
+            <link>
+<![CDATA[ https://www.gsplus.hu/hir/ezzel-jatszunk-az-ev-vegen-astro-bot-es-indiana-jones-and-the-great-circle-362048.html ]]>
+</link>
+            <description>
+<![CDATA[ Cuki robotokkal és kincskereséssel búcsúztatjuk 2024-et. ]]>
+</description>
+            <author>Chavalier</author>
+            <category>infopctech</category>
+            <pubDate>Sat, 28 Dec 2024 10:29:59 +0100</pubDate>
+            <guid>
+                https://www.gsplus.hu/hir/ezzel-jatszunk-az-ev-vegen-astro-bot-es-indiana-jones-and-the-great-circle-362048.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2406/27/astro_bot_133035_1_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Kiszivárgott az Nvidia RTX 5070 és RTX 5070 Ti kártyák teljes specifikációja</title>
+            <link>
+<![CDATA[ https://www.pcwplus.hu/pcwpro/iphone-15-pro-teszt-konnyu-es-beleszeretni-is-347441.html ]]>
+</link>
+            <description>
+<![CDATA[ Egy megbízható szivárogtatónak köszönhetően tulajdonképpen minden részletre fény derült. ]]>
+</description>
+            <author>Varga Kristóf</author>
+            <category>infopctech</category>
+            <pubDate>Sat, 28 Dec 2024 10:14:13 +0100</pubDate>
+            <guid>
+                https://www.pcwplus.hu/pcwpro/iphone-15-pro-teszt-konnyu-es-beleszeretni-is-347441.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2412/27/rtx_5070_114559_1_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Most ingyen szerezhetsz meg egy PC-s játékot, ha nem vársz túl sokáig</title>
+            <link>
+<![CDATA[ https://www.gsplus.hu/ingyen-jatekok/most-ingyen-szerezhetsz-meg-egy-pcs-jatekot-ha-nem-varsz-tul-sokaig-362051.html ]]>
+</link>
+            <description>
+<![CDATA[ Ajándékot osztogat a téli vásárt tartó GOG. ]]>
+</description>
+            <author>Chavalier</author>
+            <category>infopctech</category>
+            <pubDate>Sat, 28 Dec 2024 09:17:41 +0100</pubDate>
+            <guid>
+                https://www.gsplus.hu/ingyen-jatekok/most-ingyen-szerezhetsz-meg-egy-pcs-jatekot-ha-nem-varsz-tul-sokaig-362051.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2303/28/gog_good_old_games_202951_1_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>A Warner ismét elhalasztotta a Batman 2 bemutatóját, James Gunn elárulta a döntés
+                okát</title>
+            <link>
+<![CDATA[ https://www.gsplus.hu/masvilag/a-warner-ismet-elhalasztotta-a-batman-2-bemutatojat-james-gunn-elarulta-a-dontes-okat-362050.html ]]>
+</link>
+            <description>
+<![CDATA[ Jelentősen átkavarja filmes naptárát a Warner Bros. Discovery. ]]>
+</description>
+            <author>Chavalier</author>
+            <category>infopctech</category>
+            <pubDate>Sat, 28 Dec 2024 08:04:06 +0100</pubDate>
+            <guid>
+                https://www.gsplus.hu/masvilag/a-warner-ismet-elhalasztotta-a-batman-2-bemutatojat-james-gunn-elarulta-a-dontes-okat-362050.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2208/12/the_batman_robert_pattinson_072916_1_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Jelentős előrelépést hozhat a Galaxy S25 Slim kamerarendszere</title>
+            <link>
+<![CDATA[ https://www.pcwplus.hu/pcwlite/jelentos-elorelepest-hozhat-a-galaxy-s25-slim-kamerarendszere-362030.html ]]>
+</link>
+            <description>
+<![CDATA[ Az ALoP-technológia révén kevésbé lesz kitüremkedő a mobil kameraszigete. ]]>
+</description>
+            <author>Varga Kristóf</author>
+            <category>infopctech</category>
+            <pubDate>Sat, 28 Dec 2024 07:01:21 +0100</pubDate>
+            <guid>
+                https://www.pcwplus.hu/pcwlite/jelentos-elorelepest-hozhat-a-galaxy-s25-slim-kamerarendszere-362030.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2412/27/samsung_galaxy_s25_ultra_110928_1_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Az Éjjeli ügynök második szezonjával indítja az évet a Netflix</title>
+            <link>
+<![CDATA[ https://www.gsplus.hu/masvilag/az-ejjeli-ugynok-masodik-szezonjaval-inditja-az-evet-a-netflix-362043.html ]]>
+</link>
+            <description>
+<![CDATA[ Peter Sutherland visszatért, és egész Manhattan megmentése rajta áll. ]]>
+</description>
+            <author>Hunter_GS</author>
+            <category>infopctech</category>
+            <pubDate>Sat, 28 Dec 2024 07:01:01 +0100</pubDate>
+            <guid>
+                https://www.gsplus.hu/masvilag/az-ejjeli-ugynok-masodik-szezonjaval-inditja-az-evet-a-netflix-362043.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2412/27/ejjeli_ugynok_netflix_134410_1_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Lesz a Superman végén stáblistás jelenet, de Gunn elkerülné az ezzel járó
+                buktatókat</title>
+            <link>
+<![CDATA[ https://www.gsplus.hu/masvilag/lesz-a-superman-vegen-stablistas-jelenet-de-gunn-elkerulne-az-ezzel-jaro-buktatokat-362038.html ]]>
+</link>
+            <description>
+<![CDATA[ James Gunn sokat tanult a Marvellel való együttműködése során, és ezúttal máshogy szeretné megközelíteni a stáblistás extrákat. ]]>
+</description>
+            <author>Hunter_GS</author>
+            <category>infopctech</category>
+            <pubDate>Fri, 27 Dec 2024 19:01:44 +0100</pubDate>
+            <guid>
+                https://www.gsplus.hu/masvilag/lesz-a-superman-vegen-stablistas-jelenet-de-gunn-elkerulne-az-ezzel-jaro-buktatokat-362038.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2407/25/superman_195030_1_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Kiberbűnözők támadták meg az Európai Űrügynökséget</title>
+            <link>
+<![CDATA[ https://www.pcwplus.hu/pcwlite/kiberbunozok-tamadtak-meg-az-europai-urugynokseget-362042.html ]]>
+</link>
+            <description>
+<![CDATA[ Érzékeny vásárlói adatokat, köztük bankkártya-információkat gyűjtöttek be. ]]>
+</description>
+            <author>Hajdú Gábor</author>
+            <category>infopctech</category>
+            <pubDate>Fri, 27 Dec 2024 18:35:08 +0100</pubDate>
+            <guid>
+                https://www.pcwplus.hu/pcwlite/kiberbunozok-tamadtak-meg-az-europai-urugynokseget-362042.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2412/27/european_space_agency_133708_1_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Fekete Macska is csatlakozik a Bosszúállókhoz</title>
+            <link>
+<![CDATA[ https://www.gsplus.hu/masvilag/fekete-macska-is-csatlakozik-a-bosszuallokhoz-362039.html ]]>
+</link>
+            <description>
+<![CDATA[ Az ő segítségére is szükségük lesz a következő nagy kalandban. ]]>
+</description>
+            <author>Csirke</author>
+            <category>infopctech</category>
+            <pubDate>Fri, 27 Dec 2024 18:06:23 +0100</pubDate>
+            <guid>
+                https://www.gsplus.hu/masvilag/fekete-macska-is-csatlakozik-a-bosszuallokhoz-362039.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2412/27/black_cat_fekete_macska_131546_2_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Egy 15 ezer forintos játékot adott ma ingyen az Epic Games Store</title>
+            <link>
+<![CDATA[ https://www.gsplus.hu/ingyen-jatekok/egy-15-ezer-forintos-jatekot-adott-ma-ingyen-az-epic-games-store-362046.html ]]>
+</link>
+            <description>
+<![CDATA[ Ma sem hagyott ingyenes játék nélkül benneteket az EGS. ]]>
+</description>
+            <author>Csirke</author>
+            <category>infopctech</category>
+            <pubDate>Fri, 27 Dec 2024 17:02:13 +0100</pubDate>
+            <guid>
+                https://www.gsplus.hu/ingyen-jatekok/egy-15-ezer-forintos-jatekot-adott-ma-ingyen-az-epic-games-store-362046.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2412/06/epic_games_store_124200_1_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Eredetileg ennyi évadot terveztek a Star Wars: Az akolitusnak</title>
+            <link>
+<![CDATA[ https://www.gsplus.hu/masvilag/eredetileg-ennyi-evadot-terveztek-a-star-wars-az-akolitusnak-362037.html ]]>
+</link>
+            <description>
+<![CDATA[ Messze nem csak egyetlen szezonra szóltak Az akolitus alkotóinak tervei. ]]>
+</description>
+            <author>Csirke</author>
+            <category>infopctech</category>
+            <pubDate>Fri, 27 Dec 2024 16:01:33 +0100</pubDate>
+            <guid>
+                https://www.gsplus.hu/masvilag/eredetileg-ennyi-evadot-terveztek-a-star-wars-az-akolitusnak-362037.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2407/21/star_wars_az_akolitus_star_wars_the_acolyte_201652_3_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Az LG új lámpája egy beltéri kertet varázsol a szobádba</title>
+            <link>
+<![CDATA[ https://www.pcwplus.hu/pcwlite/az-lg-uj-lampaja-egy-belteri-kertet-varazsol-a-szobadba-362041.html ]]>
+</link>
+            <description>
+<![CDATA[ Az LG új, többfunkciós lámpája nemcsak világít, hanem segít a növényeid nevelésében is. ]]>
+</description>
+            <author>Hajdú Gábor</author>
+            <category>infopctech</category>
+            <pubDate>Fri, 27 Dec 2024 15:33:41 +0100</pubDate>
+            <guid>
+                https://www.pcwplus.hu/pcwlite/az-lg-uj-lampaja-egy-belteri-kertet-varazsol-a-szobadba-362041.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2412/27/lg_lampa_133114_2_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Hosszú idő után életjelet adott magáról az Everwild, a Rare új játéka</title>
+            <link>
+<![CDATA[ https://www.gsplus.hu/hir/hosszu-ido-utan-eletjelet-adott-magarol-az-everwild-a-rare-uj-jateka-362036.html ]]>
+</link>
+            <description>
+<![CDATA[ Egy ünnepi képeslap újraélesztette a rajongók reményeit az Everwild kapcsán. ]]>
+</description>
+            <author>Csirke</author>
+            <category>infopctech</category>
+            <pubDate>Fri, 27 Dec 2024 15:03:09 +0100</pubDate>
+            <guid>
+                https://www.gsplus.hu/hir/hosszu-ido-utan-eletjelet-adott-magarol-az-everwild-a-rare-uj-jateka-362036.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2412/27/everwild_125346_1_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+        <item>
+            <title>Újabb Grand Theft Auto VI részletek érkezhetnek?</title>
+            <link>
+<![CDATA[ https://www.gsplus.hu/hir/ujabb-grand-theft-auto-vi-reszletek-erkezhetnek-362035.html ]]>
+</link>
+            <description>
+<![CDATA[ A rajongók izgatottan spekulálnak a Grand Theft Auto VI kapcsán. ]]>
+</description>
+            <author>Csirke</author>
+            <category>infopctech</category>
+            <pubDate>Fri, 27 Dec 2024 14:05:18 +0100</pubDate>
+            <guid>
+                https://www.gsplus.hu/hir/ujabb-grand-theft-auto-vi-reszletek-erkezhetnek-362035.html</guid>
+            <enclosure
+                url="https://i.cdn29.hu/apix_collect_c/ngg_images/2312/05/grand_theft_auto_vi_054824_1_original_390x220_cover.jpg"
+                length="2048" type="image/jpeg" />
+        </item>
+    </channel>
+</rss>
