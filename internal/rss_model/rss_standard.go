@@ -1,4 +1,4 @@
-package models
+package rss_model
 
 import (
 	"strings"

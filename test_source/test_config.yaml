@@ -13,4 +13,4 @@ crunchyroll: true
 kafka:
   server: atihome.lan:9092
   topic: rss-feed
-  consumer_group: rss-feed-consumer
+wait_seconds: 3600

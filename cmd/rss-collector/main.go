@@ -3,10 +3,9 @@ package main
 import (
 	"log/slog"
 	"os"
-	"time"
 
 	"github.com/alecthomas/kong"
-	"github.com/onlyati/rss-collector/rss_reader"
+	"github.com/onlyati/rss-collector/internal/rss_reader"
 )
 
 var CLI struct {
@@ -34,17 +33,14 @@ func main() {
 			os.Exit(1)
 		}
 
-		reader, err := rss_reader.NewRSSReaderFromYAML(config)
+		reader, err := rss_reader.NewRSSReader(config)
+		// reader, err := rss_reader.NewRSSReaderFromYAML(config)
 		if err != nil {
 			slog.Error("failed to read RSS feed", "error", err)
 		} else {
-			slog.Info("config has been read", "config", reader)
 			for {
 				reader.CollectData()
-				now := time.Now()
-				nextRun := now.Add(time.Hour)
-				slog.Info("sleep before next cycle", "now", now, "next_run", nextRun)
-				time.Sleep(time.Hour)
+				reader.Sleep()
 			}
 		}
 	}
