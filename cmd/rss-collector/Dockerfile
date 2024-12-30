@@ -15,21 +15,26 @@ RUN go mod tidy
 COPY . .
 
 # Build the Go app
-RUN go build -tags musl -o rss-collector .
+RUN go build -tags musl -o rss-collector ./cmd/rss-collector/main.go
 
 # Stage 2: Create the final minimal image
 FROM alpine:latest
-
-# Install ca-certificates to allow connecting to secure sites
-RUN apk --no-cache add ca-certificates librdkafka-dev pkgconf
 
 # Set the Current Working Directory inside the container
 WORKDIR /app
 
 # Copy the Go binary from the builder stage
 COPY --from=builder /app/rss-collector .
-COPY ./test_source/test_config.yaml /app/config.yaml
+COPY ./scripts/start_collector.sh /app/start_collector.sh
 
+# Install ca-certificates to allow connecting to secure sites
+RUN addgroup -S rss \
+    && adduser -S rss -G rss \
+    && apk --no-cache add ca-certificates librdkafka-dev pkgconf \
+    && chmod +x /app/start_collector.sh \
+    && chown -R rss:rss /app
+
+USER rss
 # Run the Go binary
-ENTRYPOINT ["/app/rss-collector", "collect", "--config", "/app/config.yaml"]
+ENTRYPOINT ["/app/start_collector.sh"]
 
