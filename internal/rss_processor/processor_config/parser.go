@@ -3,6 +3,7 @@ package processor_config
 import (
 	"fmt"
 	"log/slog"
+	"os"
 
 	"gopkg.in/yaml.v3"
 )
@@ -13,11 +14,12 @@ type RSSProcessorConfig struct {
 }
 
 type DatabaseOption struct {
-	Hostname string `yaml:"hostname"`
-	Port     int    `yaml:"port"`
-	UserName string `yaml:"user"`
-	Password string `yaml:"password"`
-	DbName   string `yaml:"db_name"`
+	Hostname     string `yaml:"hostname"`
+	Port         int    `yaml:"port"`
+	UserName     string `yaml:"user"`
+	PasswordPath string `yaml:"password_path"`
+	Password     string `yaml:"-"`
+	DbName       string `yaml:"db_name"`
 }
 
 type ConsumerOptions struct {
@@ -32,6 +34,14 @@ func NewRSSProcessorConfigFromYAML(content []byte) (*RSSProcessorConfig, error) 
 	if err != nil {
 		return nil, err
 	}
+	slog.Info("config has been read", "config", processor)
+
+	pw, err := os.ReadFile(processor.DatabaseOptions.PasswordPath)
+	if err != nil {
+		slog.Error("failed to read password file", "file_path", processor.DatabaseOptions.PasswordPath)
+		return nil, err
+	}
+	processor.DatabaseOptions.Password = string(pw)
 
 	errFlag := false
 	if processor.KafkaOptions.Server == "" {
@@ -77,7 +87,7 @@ func NewRSSProcessorConfigFromYAML(content []byte) (*RSSProcessorConfig, error) 
 		return nil, fmt.Errorf("failed to parse config")
 	}
 
-	slog.Info("config successfully been read", "config", processor)
+	slog.Info("config successfully been read")
 
 	return processor, nil
 }

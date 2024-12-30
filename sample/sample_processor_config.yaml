@@ -6,5 +6,5 @@ db:
   hostname: atihome.lan
   port: 5432
   user: rss_user
-  password: abcd
+  password_path: /tmp/pw.secret
   db_name: rss_db
