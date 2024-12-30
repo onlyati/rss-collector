@@ -38,10 +38,7 @@ func main() {
 		if err != nil {
 			slog.Error("failed to read RSS feed", "error", err)
 		} else {
-			for {
-				reader.CollectData()
-				reader.Sleep()
-			}
+			reader.Start()
 		}
 	}
 }

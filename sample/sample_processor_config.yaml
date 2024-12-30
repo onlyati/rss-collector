@@ -1,0 +1,10 @@
+kafka:
+  server: atihome.lan:9092
+  topic: rss-feed
+  group_id: feed-processor
+db:
+  hostname: atihome.lan
+  port: 5432
+  user: rss_user
+  password: abcd
+  db_name: rss_db

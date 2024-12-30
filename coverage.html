@@ -1,0 +1,831 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>rss-collector: Go Coverage Report</title>
+		<style>
+			body {
+				background: black;
+				color: rgb(80, 80, 80);
+			}
+			body, pre, #legend span {
+				font-family: Menlo, monospace;
+				font-weight: bold;
+			}
+			#topbar {
+				background: black;
+				position: fixed;
+				top: 0; left: 0; right: 0;
+				height: 42px;
+				border-bottom: 1px solid rgb(80, 80, 80);
+			}
+			#content {
+				margin-top: 50px;
+			}
+			#nav, #legend {
+				float: left;
+				margin-left: 10px;
+			}
+			#legend {
+				margin-top: 12px;
+			}
+			#nav {
+				margin-top: 10px;
+			}
+			#legend span {
+				margin: 0 5px;
+			}
+			.cov0 { color: rgb(192, 0, 0) }
+.cov1 { color: rgb(128, 128, 128) }
+.cov2 { color: rgb(116, 140, 131) }
+.cov3 { color: rgb(104, 152, 134) }
+.cov4 { color: rgb(92, 164, 137) }
+.cov5 { color: rgb(80, 176, 140) }
+.cov6 { color: rgb(68, 188, 143) }
+.cov7 { color: rgb(56, 200, 146) }
+.cov8 { color: rgb(44, 212, 149) }
+.cov9 { color: rgb(32, 224, 152) }
+.cov10 { color: rgb(20, 236, 155) }
+
+		</style>
+	</head>
+	<body>
+		<div id="topbar">
+			<div id="nav">
+				<select id="files">
+				
+				<option value="file0">github.com/onlyati/rss-collector/cmd/rss-collector/main.go (0.0%)</option>
+				
+				<option value="file1">github.com/onlyati/rss-collector/cmd/rss-consumer/main.go (0.0%)</option>
+				
+				<option value="file2">github.com/onlyati/rss-collector/internal/kafka_ops/events/update_rss_feed.go (0.0%)</option>
+				
+				<option value="file3">github.com/onlyati/rss-collector/internal/kafka_ops/producer.go (0.0%)</option>
+				
+				<option value="file4">github.com/onlyati/rss-collector/internal/rss_model/rss_crunchyroll.go (96.0%)</option>
+				
+				<option value="file5">github.com/onlyati/rss-collector/internal/rss_model/rss_reddit.go (90.5%)</option>
+				
+				<option value="file6">github.com/onlyati/rss-collector/internal/rss_model/rss_standard.go (0.0%)</option>
+				
+				<option value="file7">github.com/onlyati/rss-collector/internal/rss_model/rss_youtube.go (0.0%)</option>
+				
+				<option value="file8">github.com/onlyati/rss-collector/internal/rss_model/unmarshals.go (78.9%)</option>
+				
+				<option value="file9">github.com/onlyati/rss-collector/internal/rss_reader/data.go (0.0%)</option>
+				
+				<option value="file10">github.com/onlyati/rss-collector/internal/rss_reader/reader_config/parser.go (0.0%)</option>
+				
+				<option value="file11">github.com/onlyati/rss-collector/internal/rss_reader/rss_reader.go (0.0%)</option>
+				
+				</select>
+			</div>
+			<div id="legend">
+				<span>not tracked</span>
+			
+				<span class="cov0">not covered</span>
+				<span class="cov8">covered</span>
+			
+			</div>
+		</div>
+		<div id="content">
+		
+		<pre class="file" id="file0" style="display: none">package main
+
+import (
+        "log/slog"
+        "os"
+
+        "github.com/alecthomas/kong"
+        "github.com/onlyati/rss-collector/internal/rss_reader"
+)
+
+var CLI struct {
+        Collect struct {
+                Config  string `help:"Path for the config YAML file."`
+                JsonLog bool   `help:"Log output format is JSON."`
+        } `cmd:"" help:"Collect RSS feeds and push to Kafka based on configuration."`
+}
+
+func main() <span class="cov0" title="0">{
+        ctx := kong.Parse(&amp;CLI)
+        switch ctx.Command() </span>{
+        case "collect":<span class="cov0" title="0">
+                if CLI.Collect.JsonLog </span><span class="cov0" title="0">{
+                        logger := slog.New(slog.NewJSONHandler(os.Stdout, nil))
+                        slog.SetDefault(logger)
+                }</span> else<span class="cov0" title="0"> {
+                        logger := slog.New(slog.NewTextHandler(os.Stdout, nil))
+                        slog.SetDefault(logger)
+                }</span>
+
+                <span class="cov0" title="0">config, err := os.ReadFile(CLI.Collect.Config)
+                if err != nil </span><span class="cov0" title="0">{
+                        slog.Error("failed to read config file", "error", err)
+                        os.Exit(1)
+                }</span>
+
+                <span class="cov0" title="0">reader, err := rss_reader.NewRSSReader(config)
+                // reader, err := rss_reader.NewRSSReaderFromYAML(config)
+                if err != nil </span><span class="cov0" title="0">{
+                        slog.Error("failed to read RSS feed", "error", err)
+                }</span> else<span class="cov0" title="0"> {
+                        for </span><span class="cov0" title="0">{
+                                reader.CollectData()
+                                reader.Sleep()
+                        }</span>
+                }
+        }
+}
+</pre>
+		
+		<pre class="file" id="file1" style="display: none">package main
+
+func main() {<span class="cov0" title="0">
+
+}</span>
+</pre>
+		
+		<pre class="file" id="file2" style="display: none">package events
+
+import (
+        "encoding/json"
+        "encoding/xml"
+        "io"
+        "log/slog"
+
+        "github.com/confluentinc/confluent-kafka-go/v2/kafka"
+        "github.com/onlyati/rss-collector/internal/rss_model"
+)
+
+// This function read the data from the source link and decode it as it is specified in T.
+func convertToGenericRSS[T rss_model.RSSable](xmlContent io.Reader) (T, error) <span class="cov0" title="0">{
+        var rss T
+        decoder := xml.NewDecoder(xmlContent)
+        err := decoder.Decode(&amp;rss)
+        if err != nil </span><span class="cov0" title="0">{
+                return rss, err
+        }</span>
+        <span class="cov0" title="0">return rss, nil</span>
+}
+
+// This function convert T type into a generic RSS and convert it to a JSON string,
+// which is sent to Kafka.
+func convertToJSON[T rss_model.RSSable](rss T) (*[]byte, error) <span class="cov0" title="0">{
+        finalRSS, err := rss.CreateRSS()
+        if err != nil </span><span class="cov0" title="0">{
+                return nil, err
+        }</span>
+
+        <span class="cov0" title="0">rssMessage, err := json.Marshal(finalRSS)
+        if err != nil </span><span class="cov0" title="0">{
+                return nil, err
+        }</span>
+        <span class="cov0" title="0">return &amp;rssMessage, nil</span>
+}
+
+func SendFeedToKafka[T rss_model.RSSable](
+        xmlContent io.Reader,
+        topic string,
+        producer *kafka.Producer,
+        deliverChan chan kafka.Event,
+) error <span class="cov0" title="0">{
+        // Convert type to a unified RSS type
+        rss, err := convertToGenericRSS[T](xmlContent)
+        if err != nil </span><span class="cov0" title="0">{
+                slog.Error("failed to convert to XML", "error", err)
+                return err
+        }</span>
+
+        // Convert RSS struct for JSON string
+        <span class="cov0" title="0">rssJSON, err := convertToJSON(rss)
+        if err != nil </span><span class="cov0" title="0">{
+                slog.Error("failed to convert to json", "error", err)
+                return err
+        }</span>
+
+        // Send stuff to kafka
+        <span class="cov0" title="0">err = producer.Produce(&amp;kafka.Message{
+                Value:          *rssJSON,
+                Key:            []byte(rss.GetKafkaKey()),
+                TopicPartition: kafka.TopicPartition{Topic: &amp;topic, Partition: kafka.PartitionAny},
+        }, deliverChan)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+
+        <span class="cov0" title="0">return nil</span>
+}
+</pre>
+		
+		<pre class="file" id="file3" style="display: none">package kafka_ops
+
+import (
+        "log/slog"
+
+        "github.com/confluentinc/confluent-kafka-go/v2/kafka"
+        "github.com/onlyati/rss-collector/internal/rss_reader/reader_config"
+)
+
+type RSSKafkaProducer struct {
+        Producer       *kafka.Producer  // Kafka producer instance to be used by goroutines
+        DeliverChannel chan kafka.Event // Delivery channel for Kafka producer
+}
+
+func NewRSSKafkaProducer(configContent []byte) (*RSSKafkaProducer, *reader_config.RSSReaderConfig, error) <span class="cov0" title="0">{
+        rssConfig, err := reader_config.NewRSSReaderConfigFromYAML(configContent)
+        if err != nil </span><span class="cov0" title="0">{
+                return nil, nil, err
+        }</span>
+
+        <span class="cov0" title="0">producer, channel, err := createNewProducer(rssConfig.KafkaOptions.Server)
+        if err != nil </span><span class="cov0" title="0">{
+                return nil, nil, err
+        }</span>
+
+        <span class="cov0" title="0">kafka := RSSKafkaProducer{
+                Producer:       producer,
+                DeliverChannel: channel,
+        }
+
+        return &amp;kafka, rssConfig, nil</span>
+}
+
+// This function create a new Kafka produce and register it into RSSReader struct.
+// This function also creates a go routine to check Kafka delivery reports.
+//
+// Args:
+//   - server: address of the Kafka
+//
+// Returns
+//   - Kafka producer (in case of error nil)
+//   - Delivery report channel (in case of error nil)
+//   - Error message (in case of success nil)
+func createNewProducer(server string) (*kafka.Producer, chan kafka.Event, error) <span class="cov0" title="0">{
+        producer, err := kafka.NewProducer(&amp;kafka.ConfigMap{
+                "bootstrap.servers": server,
+        })
+        if err != nil </span><span class="cov0" title="0">{
+                return nil, nil, err
+        }</span>
+
+        <span class="cov0" title="0">repChan := make(chan kafka.Event)
+
+        go func() </span><span class="cov0" title="0">{
+                for </span><span class="cov0" title="0">{
+                        e := &lt;-repChan
+                        m := e.(*kafka.Message)
+
+                        if m.TopicPartition.Error != nil </span><span class="cov0" title="0">{
+                                slog.Error(
+                                        "delivery failed to Kafka",
+                                        "error", m.TopicPartition.Error,
+                                        "key", m.Key,
+                                )
+                        }</span> else<span class="cov0" title="0"> {
+                                slog.Info(
+                                        "message delivered to Kafka",
+                                        "partition", m.TopicPartition.Partition,
+                                        "offset", m.TopicPartition.Offset,
+                                        "key", m.Key,
+                                )
+                        }</span>
+                }
+        }()
+
+        <span class="cov0" title="0">return producer, repChan, nil</span>
+}
+</pre>
+		
+		<pre class="file" id="file4" style="display: none">package rss_model
+
+import (
+        "encoding/xml"
+        "strings"
+        "time"
+)
+
+// Specification for Crunchyroll RSS feed
+type CrunchyrollRSS struct {
+        XMLName xml.Name `xml:"rss"`
+        Channel struct {
+                Title string `xml:"title"` // Website title
+                Items []struct {
+                        Title       string                     `xml:"title"`       // Anime title
+                        Link        string                     `xml:"link"`        // Link to play anime
+                        Description CrunchyrollItemDescription `xml:"description"` // Description about the episode
+                        PubDate     RSSItemDate                `xml:"pubDate"`     // Published date of the episode
+                        Category    []string                   `xml:"category"`    // Category of the item
+                        Thumbnail   []MediaThumbnail           `xml:"thumbnail"`   // Crunchyroll provides more thumbnails in different size
+                        Publisher   string                     `xml:"publisher"`   // Name of the episode's publisher
+                } `xml:"item"`
+        } `xml:"channel"`
+}
+
+// The content is basically a string, but it start with a small thumbnail and linebreak.
+// This unmarshal method removed this frame.
+type CrunchyrollItemDescription string
+
+func (desc *CrunchyrollItemDescription) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error <span class="cov8" title="1">{
+        var v string
+        err := d.DecodeElement(&amp;v, &amp;start)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">cutPos := strings.Index(v, "&lt;br /&gt;")
+        if cutPos &gt; -1 </span><span class="cov8" title="1">{
+                v = v[cutPos+len("&lt;br /&gt;"):]
+        }</span>
+        <span class="cov8" title="1">*desc = CrunchyrollItemDescription(v)
+        return nil</span>
+}
+
+func (*CrunchyrollRSS) GetKafkaKey() string <span class="cov8" title="1">{
+        return "crunchyroll"
+}</span>
+
+func (rss *CrunchyrollRSS) CreateRSS() (RSS, error) <span class="cov8" title="1">{
+        finalRSS := RSS{}
+        finalRSS.Title = rss.Channel.Title
+        finalRSS.Items = []RSSItem{}
+
+        for _, item := range rss.Channel.Items </span><span class="cov8" title="1">{
+                // Exclude dub versions
+                if strings.Contains(item.Title, "Dub)") </span><span class="cov8" title="1">{
+                        continue</span>
+                }
+
+                // Find the biggest image
+                <span class="cov8" title="1">imageLink := ""
+                imageWidth := 0
+                for _, thumbnail := range item.Thumbnail </span><span class="cov8" title="1">{
+                        if thumbnail.Width &gt; imageWidth </span><span class="cov8" title="1">{
+                                imageLink = thumbnail.URL
+                                imageWidth = thumbnail.Width
+                        }</span>
+                }
+
+                // Create the common RSS item
+                <span class="cov8" title="1">newItem := RSSItem{
+                        Title:       item.Title,
+                        PubDate:     time.Time(item.PubDate),
+                        Description: string(item.Description),
+                        Category:    append(item.Category, "crunchyroll"),
+                        ImageLink:   &amp;imageLink,
+                        Link:        item.Link,
+                        Author:      item.Publisher,
+                }
+                finalRSS.Items = append(finalRSS.Items, newItem)</span>
+        }
+
+        <span class="cov8" title="1">return finalRSS, nil</span>
+}
+</pre>
+		
+		<pre class="file" id="file5" style="display: none">package rss_model
+
+import (
+        "encoding/xml"
+        "html"
+        "strings"
+        "time"
+)
+
+// Specification for Reddit RSS feed
+type RedditRSS struct {
+        XMLName  xml.Name           `xml:"feed"`
+        Category RedditFeedCategory `xml:"category"` // Indicate the subreddit category
+        Title    string             `xml:"title"`    // Subreddit title
+        Entry    []RedditEntry      `xml:"entry"`    // Posts in the subreddit
+}
+
+type RedditFeedCategory struct {
+        Term  string `xml:"term,attr"`  // It is "ansible" for ansible subreddit
+        Label string `xml:"label,attr"` // It is "/r/ansible" for ansible subreddit
+}
+
+type RedditEntry struct {
+        Author   string             `xml:"author&gt;name"` // User name who made post
+        Category RedditFeedCategory `xml:"category"`    // Same category then the main element
+        Content  RedditEntryContent `xml:"content"`     // Content of the post
+        Link     RSSLink            `xml:"link"`        // Link for the post
+        PubDate  time.Time          `xml:"published"`   // When the post was created
+        Title    string             `xml:"title"`       // Title of the post
+}
+
+// Reddit deliver the content in HTML format, but all character are escaped.
+// So they have to converted back and the "frame div" that is put among the content is also removed.
+type RedditEntryContent string
+
+func (c *RedditEntryContent) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error <span class="cov8" title="1">{
+        var v struct {
+                Type               string `xml:"type,attr"`
+                RedditEntryContent string `xml:",chardata"`
+        }
+        err := d.DecodeElement(&amp;v, &amp;start)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">if v.Type == "html" </span><span class="cov8" title="1">{
+                v.RedditEntryContent = html.UnescapeString(v.RedditEntryContent)
+                if strings.Contains(v.RedditEntryContent, "&lt;!-- SC_OFF --&gt;") </span><span class="cov8" title="1">{
+                        startPos := strings.Index(v.RedditEntryContent, "&lt;!-- SC_OFF --&gt;")
+                        endPos := strings.Index(v.RedditEntryContent, "&lt;!-- SC_ON --&gt;")
+                        v.RedditEntryContent = v.RedditEntryContent[startPos+len("&lt;!-- SC_OFF --&gt;") : endPos]
+                }</span>
+
+                <span class="cov8" title="1">if v.RedditEntryContent[0:len("&lt;div class=\"md\"&gt;")] == "&lt;div class=\"md\"&gt;" </span><span class="cov0" title="0">{
+                        v.RedditEntryContent = v.RedditEntryContent[len("&lt;div class=\"md\"&gt;") : len(v.RedditEntryContent)-len("&lt;/div&gt;")]
+                }</span>
+        }
+        <span class="cov8" title="1">*c = RedditEntryContent(v.RedditEntryContent)
+        return nil</span>
+}
+
+func (rss *RedditRSS) GetKafkaKey() string <span class="cov8" title="1">{
+        return "reddit_" + rss.Category.Term
+}</span>
+
+func (rss *RedditRSS) CreateRSS() (RSS, error) <span class="cov8" title="1">{
+        finalRSS := RSS{}
+        finalRSS.Title = rss.Title
+
+        for _, entry := range rss.Entry </span><span class="cov8" title="1">{
+                newItem := RSSItem{
+                        Title:       entry.Title,
+                        PubDate:     entry.PubDate,
+                        Description: string(entry.Content),
+                        Category:    []string{"reddit", entry.Category.Label, entry.Category.Term},
+                        ImageLink:   nil,
+                        Link:        string(entry.Link),
+                        Author:      entry.Author,
+                }
+                finalRSS.Items = append(finalRSS.Items, newItem)
+        }</span>
+
+        <span class="cov8" title="1">return finalRSS, nil</span>
+}
+</pre>
+		
+		<pre class="file" id="file6" style="display: none">package rss_model
+
+import (
+        "strings"
+        "time"
+)
+
+// Specification for general RSS feed
+type StandardRSS struct {
+        Channel struct {
+                Title string `xml:"title"`
+                Items []struct {
+                        Title       string      `xml:"title"`
+                        Link        string      `xml:"link"`
+                        Description string      `xml:"description"`
+                        PubDate     RSSItemDate `xml:"pubDate"`
+                        Author      string      `xml:"author"`
+                        Creator     string      `xml:"creator"`
+                        Category    []string    `xml:"category"`
+                        Enclosure   *struct {
+                                Url    string `xml:"url,attr"`
+                                Length int    `xml:"length,attr"`
+                                Type   string `xml:"type,attr"`
+                        } `xml:"enclosure"`
+                } `xml:"item"`
+        } `xml:"channel"`
+}
+
+func (rss *StandardRSS) GetKafkaKey() string <span class="cov0" title="0">{
+        key := strings.ToLower(rss.Channel.Title)
+        key = strings.ReplaceAll(key, " ", "_")
+        return "rss_" + key
+}</span>
+
+func (rss *StandardRSS) CreateRSS() (RSS, error) <span class="cov0" title="0">{
+        finalRSS := RSS{}
+        finalRSS.Title = rss.Channel.Title
+        finalRSS.Items = []RSSItem{}
+
+        for _, item := range rss.Channel.Items </span><span class="cov0" title="0">{
+                author := item.Author
+                if author == "" </span><span class="cov0" title="0">{
+                        author = item.Creator
+                }</span>
+                <span class="cov0" title="0">var imageLink *string = nil
+                if item.Enclosure != nil </span><span class="cov0" title="0">{
+                        imageLink = &amp;item.Enclosure.Url
+                }</span>
+
+                <span class="cov0" title="0">newItem := RSSItem{
+                        Title:       item.Title,
+                        PubDate:     time.Time(item.PubDate),
+                        Description: item.Description,
+                        Author:      author,
+                        Category:    append(item.Category, finalRSS.Title),
+                        Link:        item.Link,
+                        ImageLink:   imageLink,
+                }
+                finalRSS.Items = append(finalRSS.Items, newItem)</span>
+        }
+
+        <span class="cov0" title="0">return finalRSS, nil</span>
+}
+</pre>
+		
+		<pre class="file" id="file7" style="display: none">package rss_model
+
+import (
+        "encoding/xml"
+        "strings"
+        "time"
+)
+
+// Specification for Youtube RSS feed
+type YoutubeRSS struct {
+        XMLName xml.Name       `xml:"feed"`
+        Title   string         `xml:"title"` // Channel's title
+        Entry   []YoutubeEntry `xml:"entry"`
+}
+
+type YoutubeEntry struct {
+        Author  string     `xml:"author&gt;name"` // Who made the video
+        Title   string     `xml:"title"`       // Title of the video
+        Link    RSSLink    `xml:"link"`        // Link for the video
+        PubDate time.Time  `xml:"published"`   // When was the video published
+        Media   MediaGroup `xml:"group"`       // Thumbnail and description for the video
+}
+
+type MediaGroup struct {
+        Description string         `xml:"description"`
+        Thumbnail   MediaThumbnail `xml:"thumbnail"`
+}
+
+func (rss *YoutubeRSS) GetKafkaKey() string <span class="cov0" title="0">{
+        key := strings.ToLower(rss.Title)
+        key = strings.ReplaceAll(key, " ", "_")
+        return "youtube_" + key
+}</span>
+
+func (rss *YoutubeRSS) CreateRSS() (RSS, error) <span class="cov0" title="0">{
+        finalRSS := RSS{}
+        finalRSS.Title = rss.Title
+        finalRSS.Items = []RSSItem{}
+
+        for _, entry := range rss.Entry </span><span class="cov0" title="0">{
+                newItem := RSSItem{
+                        Title:       entry.Title,
+                        PubDate:     entry.PubDate,
+                        Description: entry.Media.Description,
+                        Category:    []string{"youtube", finalRSS.Title},
+                        ImageLink:   &amp;entry.Media.Thumbnail.URL,
+                        Link:        string(entry.Link),
+                        Author:      entry.Author,
+                }
+                finalRSS.Items = append(finalRSS.Items, newItem)
+        }</span>
+
+        <span class="cov0" title="0">return finalRSS, nil</span>
+}
+</pre>
+		
+		<pre class="file" id="file8" style="display: none">package rss_model
+
+import (
+        "encoding/xml"
+        "strings"
+        "time"
+)
+
+// This time is a wrapper to convert from standard RSS date format during XML decoding
+type RSSItemDate time.Time
+
+func (date *RSSItemDate) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error <span class="cov8" title="1">{
+        var v string
+        err := d.DecodeElement(&amp;v, &amp;start)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">words := strings.Split(v, " ")
+        layout := "Mon, 02 Jan 2006 15:04:05 -0700"
+        if words[len(words)-1] == "GMT" </span><span class="cov0" title="0">{
+                layout = "Mon, 02 Jan 2006 15:04:05 GMT"
+        }</span>
+        <span class="cov8" title="1">formattedDate, err := time.Parse(layout, v)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">*date = RSSItemDate(formattedDate)
+        return nil</span>
+}
+
+// This is a wrapper that get the link from the internal element's attribute
+type RSSLink string
+
+func (l *RSSLink) UnmarshalXML(d *xml.Decoder, start xml.StartElement) error <span class="cov8" title="1">{
+        var v struct {
+                Href string `xml:"href,attr"`
+        }
+        err := d.DecodeElement(&amp;v, &amp;start)
+        if err != nil </span><span class="cov0" title="0">{
+                return err
+        }</span>
+        <span class="cov8" title="1">*l = RSSLink(v.Href)
+        return nil</span>
+}
+</pre>
+		
+		<pre class="file" id="file9" style="display: none">package rss_reader
+
+import (
+        "fmt"
+        "log/slog"
+        "net/http"
+        "sync"
+
+        "github.com/onlyati/rss-collector/internal/kafka_ops/events"
+        "github.com/onlyati/rss-collector/internal/rss_model"
+)
+
+// Collect data from various data source
+func (reader *RSSReader) CollectData() <span class="cov0" title="0">{
+        wg := sync.WaitGroup{}
+
+        wg.Add(1)
+        go collectData[*rss_model.YoutubeRSS](
+                reader,
+                "youtube",
+                reader.RSSConfig.YoutubeChannels,
+                "https://www.youtube.com/feeds/videos.xml?channel_id=",
+                &amp;wg,
+        )
+
+        wg.Add(1)
+        go collectData[*rss_model.RedditRSS](
+                reader,
+                "reddit",
+                reader.RSSConfig.RedditThreads,
+                "https://www.reddit.com/r/",
+                &amp;wg,
+        )
+
+        wg.Add(1)
+        go collectData[*rss_model.StandardRSS](
+                reader,
+                "standard",
+                reader.RSSConfig.StandardLinks,
+                "",
+                &amp;wg,
+        )
+
+        wg.Add(1)
+        go collectData[*rss_model.CrunchyrollRSS](
+                reader,
+                "crunchyroll",
+                []string{"https://feeds.feedburner.com/crunchyroll/rss/anime"},
+                "",
+                &amp;wg,
+        )
+
+        wg.Wait()
+}</span>
+
+// This is a generic function which pace the action: fetch from source link, convert it to a unified RSS,
+// convert it to JSON string then send the data to Kafka.
+func collectData[T rss_model.RSSable](reader *RSSReader, componentType string, items []string, urlStart string, wg *sync.WaitGroup) <span class="cov0" title="0">{
+        defer wg.Done()
+        for _, item := range items </span><span class="cov0" title="0">{
+                slog.Info("read "+componentType, "item", item)
+                url := fmt.Sprintf("%s%s", urlStart, item)
+
+                // Fetch the feed by a simple HTTP GET request
+                response, err := http.Get(url)
+                if err != nil </span><span class="cov0" title="0">{
+                        slog.Error("failed to fetch RSS", "url", url, "error", err)
+                        continue</span>
+                }
+                <span class="cov0" title="0">defer response.Body.Close()
+
+                if response.StatusCode != 200 </span><span class="cov0" title="0">{
+                        slog.Error("http request did not return with 200", "status_code", response.StatusCode)
+                        continue</span>
+                }
+
+                <span class="cov0" title="0">err = events.SendFeedToKafka[T](
+                        response.Body,
+                        reader.RSSConfig.KafkaOptions.Topic,
+                        reader.Kafka.Producer,
+                        reader.Kafka.DeliverChannel,
+                )
+                if err != nil </span><span class="cov0" title="0">{
+                        slog.Error("failed to send event to kafka", "url", url, "error", err)
+                        continue</span>
+                }
+                <span class="cov0" title="0">slog.Info("read "+componentType, "item", item, "status", "done")</span>
+        }
+}
+</pre>
+		
+		<pre class="file" id="file10" style="display: none">package reader_config
+
+import (
+        "gopkg.in/yaml.v3"
+)
+
+type RSSReaderConfig struct {
+        YoutubeChannels []string     `yaml:"youtube"`      // List about youtube channels that must be watched
+        RedditThreads   []string     `yaml:"reddit"`       // List about subreddit that must be watched
+        StandardLinks   []string     `yaml:"standard"`     // General standard RSS links
+        CrunchyrollRSS  bool         `yaml:"crunchyroll"`  // Collect newly released anime
+        KafkaOptions    KafkaOptions `yaml:"kafka"`        // Kafka related settings
+        WaitSeconds     int          `yaml:"wait_seconds"` // Wait time between two calls
+}
+
+type KafkaOptions struct {
+        Topic  string `yaml:"topic"`  // Topic name where message are sent
+        Server string `yaml:"server"` // Server connection where producer is connecting
+}
+
+// This function create a new RSSReader struct based on YAML input content.
+// This function also creates a Kafka producer and go routine that checking the delivery reports from Kafka.
+func NewRSSReaderConfigFromYAML(content []byte) (*RSSReaderConfig, error) <span class="cov0" title="0">{
+        var reader *RSSReaderConfig
+        err := yaml.Unmarshal(content, &amp;reader)
+        if err != nil </span><span class="cov0" title="0">{
+                return nil, err
+        }</span>
+
+        // Return with the initialized structure
+        <span class="cov0" title="0">return reader, nil</span>
+}
+</pre>
+		
+		<pre class="file" id="file11" style="display: none">package rss_reader
+
+import (
+        "log/slog"
+        "time"
+
+        "github.com/onlyati/rss-collector/internal/kafka_ops"
+        "github.com/onlyati/rss-collector/internal/rss_reader/reader_config"
+)
+
+type RSSReader struct {
+        Kafka     kafka_ops.RSSKafkaProducer
+        RSSConfig reader_config.RSSReaderConfig
+}
+
+func NewRSSReader(configContent []byte) (*RSSReader, error) <span class="cov0" title="0">{
+        kafka, config, err := kafka_ops.NewRSSKafkaProducer(configContent)
+        if err != nil </span><span class="cov0" title="0">{
+                return nil, err
+        }</span>
+
+        <span class="cov0" title="0">reader := RSSReader{
+                Kafka:     *kafka,
+                RSSConfig: *config,
+        }
+
+        return &amp;reader, nil</span>
+}
+
+func (reader *RSSReader) Sleep() <span class="cov0" title="0">{
+        now := time.Now()
+        sleepDuration := time.Second * time.Duration(reader.RSSConfig.WaitSeconds)
+        nextRun := now.Add(sleepDuration)
+
+        slog.Info("sleep before next cycle", "now", now, "next_run", nextRun)
+        time.Sleep(sleepDuration)
+}</span>
+</pre>
+		
+		</div>
+	</body>
+	<script>
+	(function() {
+		var files = document.getElementById('files');
+		var visible;
+		files.addEventListener('change', onChange, false);
+		function select(part) {
+			if (visible)
+				visible.style.display = 'none';
+			visible = document.getElementById(part);
+			if (!visible)
+				return;
+			files.value = part;
+			visible.style.display = 'block';
+			location.hash = part;
+		}
+		function onChange() {
+			select(files.value);
+			window.scrollTo(0, 0);
+		}
+		if (location.hash != "") {
+			select(location.hash.substr(1));
+		}
+		if (!visible) {
+			select("file0");
+		}
+	})();
+	</script>
+</html>
