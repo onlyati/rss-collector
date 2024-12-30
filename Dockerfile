@@ -1,6 +1,7 @@
 # Stage 1: Build the Go binary
-FROM golang:1.23 as builder
+FROM golang:1.23-alpine AS builder
 
+RUN apk --no-cache add ca-certificates librdkafka-dev pkgconf musl-dev alpine-sdk
 # Set the Current Working Directory inside the container
 WORKDIR /app
 
@@ -14,21 +15,21 @@ RUN go mod tidy
 COPY . .
 
 # Build the Go app
-RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o main .
+RUN go build -tags musl -o rss-collector .
 
 # Stage 2: Create the final minimal image
 FROM alpine:latest
 
 # Install ca-certificates to allow connecting to secure sites
-RUN apk --no-cache add ca-certificates
+RUN apk --no-cache add ca-certificates librdkafka-dev pkgconf
 
 # Set the Current Working Directory inside the container
 WORKDIR /app
 
-USER 1000
-
 # Copy the Go binary from the builder stage
-COPY --from=builder /app/main .
+COPY --from=builder /app/rss-collector .
+COPY ./test_source/test_config.yaml /app/config.yaml
 
 # Run the Go binary
-CMD ["./rss-collector"]
+ENTRYPOINT ["/app/rss-collector", "collect", "--config", "/app/config.yaml"]
+
