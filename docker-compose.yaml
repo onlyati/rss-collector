@@ -1,24 +1,46 @@
 services:
+  processor:
+    image: localhost/rss-processor
+    environment:
+      - RSS_KAFKA_SERVER=broker:9092
+      - RSS_KAFKA_TOPIC=rss-feed
+      - RSS_KAFKA_GROUP_ID=rss-feed-group
+      - RSS_DB_HOSTNAME=db
+      - RSS_DB_PORT=5432
+      - RSS_DB_USER=rss_user
+      - RSS_DB_PW_PATH=/run/secrets/db_user_pw
+      - RSS_DB_NAME=rss_db
+      - RSS_DB_MIGRATE=true
+    secrets:
+      - db_user_pw
   collector:
     image: localhost/rss-collector
     environment:
       - RSS_YOUTUBE_NESSAJ_GAMING=UC1R3yteq3HoSUIHQ7hp65XQ
       - RSS_YOUTUBE_NESSAJ_REACTS=UCHnd8KvQyMGU0DAlJSuYwhw
       - RSS_YOUTUBE_NESSAJ=UCcSAt9uIqRHK8dEV2wVY1dQ
-      - RSS_REDDIT_SELHOST=selfhosted/.rss
+      - RSS_REDDIT_SELHOSTED=selfhosted/.rss
       - RSS_REDDIT_ANSIBLE=ansible/.rss
       - RSS_REDDIT_RUST=rust/.rss
-      - RSS_REDDIT_RUST=golang/.rss
+      - RSS_REDDIT_GO=golang/.rss
       - RSS_STANDARD_1=https://www.gsplus.hu/site/rss/rss.xml
       - RSS_STANDARD_2=https://thinkaboutit.tech/feed/
       - RSS_CRUNCHYROLL=true
       - RSS_KAFKA_SERVER=broker:9092
       - RSS_KAFKA_TOPIC=rss-feed
       - RSS_WAIT_SECONDS=60
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD_FILE: /run/secrets/db_user_pw
+      POSTGRES_USER: rss_user
+      POSTGRES_DB: rss_db
+    secrets:
+      - db_user_pw
   broker:
     image: apache/kafka
     hostname: broker
-    container_name: broker
     ports:
       - '9092:9092'
     environment:
@@ -36,3 +58,7 @@ services:
       KAFKA_TRANSACTION_STATE_LOG_MIN_ISR: 1
       KAFKA_TRANSACTION_STATE_LOG_REPLICATION_FACTOR: 1
       KAFKA_LOG_DIRS: '/tmp/kraft-combined-logs'
+
+secrets:
+  db_user_pw:
+    file: .db.env
