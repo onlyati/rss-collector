@@ -1,0 +1,117 @@
+openapi: 3.0.3
+info:
+  title: RSS feed data server
+  description: >-
+    This server provides access some RSS feed which is saved regurarly and some
+    selected items are stored.
+  contact:
+    email: onlyati@pm.me
+  version: '1'
+servers:
+  - url: http://localhost:3000
+  - url: https://api.thinkaboutit.tech
+tags:
+  - name: rss
+    description: RSS related endpoints
+paths:
+  /rss/v1:
+    get:
+      tags:
+        - rss
+      summary: list RSS feeds
+      description: This endpoint list all registered RSS channeles that are collected
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RSS'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+  /rss/v1/item:
+    get:
+      tags:
+        - rss
+      summary: list items from RSS feeds
+      parameters:
+        - name: from
+          in: query
+          schema:
+            type: string
+          description: Specifiy a date for pagination
+        - name: categories
+          in: query
+          schema:
+            type: string
+          description: Specify category filter, separated by ','
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RSSItem'
+        '500':
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    Error:
+      type: object
+      properties:
+        error:
+          type: string
+    RSS:
+      type: object
+      properties:
+        id:
+          type: string
+          example:
+            - 01941c98-c9e5-79dc-8c53-3aa94c458ee9
+            - 01941c98-c9b8-722b-95d5-476d6d50bbf2
+        title:
+          type: string
+          example:
+            - Self-Hosted Alternatives to Popular Services
+            - The Rust Programming Language
+    RSSItem:
+      type: object
+      properties:
+        id:
+          type: string
+          example:
+            - 01941c98-c9e5-79dc-8c53-3aa94c458ee9
+            - 01941c98-c9b8-722b-95d5-476d6d50bbf2
+        rss_id:
+          type: string
+          example:
+            - 01941c98-c9e5-79dc-8c53-3aa94c458ee9
+            - 01941c98-c9b8-722b-95d5-476d6d50bbf2
+        title:
+          type: string
+          description: Article/Video/Thread title
+        published:
+          type: string
+          description: When was the item published
+        description:
+          type: string
+          description: Text that is provided in RSS feed
+        category:
+          type: array
+          items:
+            type: string
+          description: Array that contains the item's categories
+        image_link:
+          type: string
+          description: Optional thumbnail image
+        link:
+          type: string
+          description: Link to the original article

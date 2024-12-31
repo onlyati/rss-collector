@@ -13,7 +13,7 @@ func CreateDatabaseConnection(config *processor_config.RSSProcessorConfig) (*gor
 	slog.Info(
 		"connect to database",
 		"hostname", config.DatabaseOptions.Hostname,
-		"port", config.DatabaseOptions.Password,
+		"port", config.DatabaseOptions.Port,
 		"user", config.DatabaseOptions.UserName,
 		"db_name", config.DatabaseOptions.DbName,
 	)

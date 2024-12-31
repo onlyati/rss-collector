@@ -1,0 +1,9 @@
+db:
+  hostname: db
+  port: 5432
+  user: rss_user
+  password_path: ./.db.env
+  db_name: rss_db
+api:
+  hostname: localhost
+  port: 3000
