@@ -1,10 +1,10 @@
 kafka:
-  server: atihome.lan:9092
+  server: broker:9092
   topic: rss-feed
   group_id: feed-processor
 db:
-  hostname: atihome.lan
+  hostname: db
   port: 5432
   user: rss_user
-  password_path: /tmp/pw.secret
+  password_path: ./.db.env
   db_name: rss_db

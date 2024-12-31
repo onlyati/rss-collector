@@ -11,6 +11,6 @@ standard:
 - https://thinkaboutit.tech/feed/
 crunchyroll: true
 kafka:
-  server: atihome.lan:9092
+  server: broker:9092
   topic: rss-feed
-wait_seconds: 3600
+wait_seconds: 60

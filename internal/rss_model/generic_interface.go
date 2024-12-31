@@ -41,7 +41,7 @@ type RSSItem struct {
 	ID          uuid.UUID      `gorm:"type:uuid;;primaryKey" json:"id"`  // Use UUIDv7
 	RSSID       uuid.UUID      `gorm:"type:uuid;not null" json:"rss_id"` // Key for the header item
 	Title       string         `gorm:"not null" json:"title"`            // Article/Video/Whatever title.
-	PubDate     time.Time      `gorm:"not null" json:"published"`        // Published data.
+	PubDate     time.Time      `gorm:"not null;index" json:"published"`  // Published data.
 	Description string         `gorm:"" json:"description"`              // Description of the item.
 	Category    pq.StringArray `gorm:"type:text[]" json:"category"`      // Categories where the item is assigned.
 	ImageLink   *string        `gorm:"type:text" json:"image_link"`      // Optional thumbnail image link.
