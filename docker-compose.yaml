@@ -1,6 +1,22 @@
 services:
+  api:
+    image: localhost/rss-api
+    restart: always
+    environment:
+      - RSS_DB_HOSTNAME=db
+      - RSS_DB_PORT=5432
+      - RSS_DB_USER=rss_user
+      - RSS_DB_PW_PATH=/run/secrets/db_user_pw
+      - RSS_DB_NAME=rss_db
+      - RSS_API_HOSTNAME=0.0.0.0
+      - RSS_API_PORT=3001
+    ports:
+      - 3001:3001
+    secrets:
+      - db_user_pw
   processor:
     image: localhost/rss-processor
+    restart: always
     environment:
       - RSS_KAFKA_SERVER=broker:9092
       - RSS_KAFKA_TOPIC=rss-feed
@@ -15,6 +31,7 @@ services:
       - db_user_pw
   collector:
     image: localhost/rss-collector
+    restart: always
     environment:
       - RSS_YOUTUBE_NESSAJ_GAMING=UC1R3yteq3HoSUIHQ7hp65XQ
       - RSS_YOUTUBE_NESSAJ_REACTS=UCHnd8KvQyMGU0DAlJSuYwhw
