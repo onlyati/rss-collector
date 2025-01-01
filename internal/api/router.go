@@ -36,7 +36,9 @@ func NewRouter(configYAML []byte) (*API, error) {
 	app := routes.App{Db: db}
 	router := gin.Default()
 
-	router.StaticFile("/docs", "./openapi/index.html")
+	if os.Getenv("GIN_MODE") != "release" {
+		router.StaticFile("/docs", "./openapi/index.html")
+	}
 	router.StaticFile("/docs/openapi.yaml", "./openapi/openapi.yaml")
 
 	apiRSS := router.Group("/rss")
