@@ -34,6 +34,7 @@ RUN addgroup -S rss \
     && chmod +x /app/start_api.sh \
     && chown -R rss:rss /app
 
+ENV GIN_MODE=release
 USER rss
 # Run the Go binary
 ENTRYPOINT ["/app/start_api.sh"]
