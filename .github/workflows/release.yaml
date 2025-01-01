@@ -51,10 +51,3 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           file: ${{ matrix.dockerfile }}
-      - name: Docker Hub Description
-        uses: peter-evans/dockerhub-description@v4
-        if: github.event_name != 'pull_request'
-        with:
-          username: ${{ vars.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_TOKEN }}
-          repository: ${{ matrix.image }}
