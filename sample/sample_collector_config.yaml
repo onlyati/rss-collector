@@ -1,14 +1,13 @@
 youtube:
-- UC1R3yteq3HoSUIHQ7hp65XQ # Nessaj gaming
-- UCHnd8KvQyMGU0DAlJSuYwhw # Nessaj reacts
-- UCcSAt9uIqRHK8dEV2wVY1dQ # Nessaj
+- UC1R3yteq3HoSUIHQ7hp65XQ
+- UCHnd8KvQyMGU0DAlJSuYwhw
+- UCcSAt9uIqRHK8dEV2wVY1dQ
 reddit:
 - ansible/.rss
 - selfhosted/.rss
 - rust/.rss
 standard:
 - https://www.gsplus.hu/site/rss/rss.xml
-- https://thinkaboutit.tech/feed/
 crunchyroll: true
 kafka:
   server: broker:9092

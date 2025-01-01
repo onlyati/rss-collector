@@ -41,7 +41,6 @@ services:
       - RSS_REDDIT_RUST=rust/.rss
       - RSS_REDDIT_GO=golang/.rss
       - RSS_STANDARD_1=https://www.gsplus.hu/site/rss/rss.xml
-      - RSS_STANDARD_2=https://thinkaboutit.tech/feed/
       - RSS_CRUNCHYROLL=true
       - RSS_KAFKA_SERVER=broker:9092
       - RSS_KAFKA_TOPIC=rss-feed
