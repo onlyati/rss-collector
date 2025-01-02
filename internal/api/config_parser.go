@@ -11,6 +11,12 @@ import (
 type APIConfig struct {
 	DatabaseOptions DatabaseOption `yaml:"db"`
 	ApiOptions      ApiOptions     `yaml:"api"`
+	CorsConfig      CorsConfig     `yaml:"cors"`
+}
+
+type CorsConfig struct {
+	Origins string `yaml:"origins"`
+	Methods string `yaml:"methods"`
 }
 
 type ApiOptions struct {

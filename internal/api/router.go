@@ -7,9 +7,11 @@ import (
 	"net/http"
 	"os"
 	"os/signal"
+	"strings"
 	"syscall"
 	"time"
 
+	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
 	"github.com/onlyati/rss-collector/internal/api/routes"
 	"gorm.io/driver/postgres"
@@ -35,6 +37,15 @@ func NewRouter(configYAML []byte) (*API, error) {
 
 	app := routes.App{Db: db}
 	router := gin.Default()
+
+	corsPolicy := cors.DefaultConfig()
+	corsPolicy.AllowMethods = strings.Split(config.CorsConfig.Methods, ",")
+	if config.CorsConfig.Origins == "*" {
+		corsPolicy.AllowAllOrigins = true
+	} else {
+		corsPolicy.AllowOrigins = strings.Split(config.CorsConfig.Origins, ",")
+	}
+	router.Use(cors.New(corsPolicy))
 
 	if os.Getenv("GIN_MODE") != "release" {
 		router.StaticFile("/docs", "./openapi/index.html")
