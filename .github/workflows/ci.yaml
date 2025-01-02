@@ -1,0 +1,46 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Go
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.21'
+
+      - name: Run Go Linter
+        uses: golangci/golangci-lint-action@v3
+        with:
+          args: run
+
+      - name: Go code formatting
+        run: |
+          gofmt -l -s -d .
+
+      - name: Verify Go Dependencies
+        run: |
+          go mod tidy
+          go mod verify
+
+      - name: Run Tests
+        run: go test ./... -v
+
+      - name: Build Binary
+        run: |
+          go build -o rss-api ./cmd/rss-api
+          go build -o rss-collector ./cmd/rss-collector
+          go build -o rss-processor ./cmd/rss-processor
+        
