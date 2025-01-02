@@ -43,8 +43,10 @@ func main() {
 		if err != nil {
 			slog.Error("failed to read RSS feed", "error", err)
 		} else {
-			processor.Read()
-
+			err = processor.Read()
+			if err != nil {
+				slog.Error("failed to process RSS feed", "error", err)
+			}
 		}
 	case "db-migration":
 		config, err := os.ReadFile(CLI.DbMigration.Config)
