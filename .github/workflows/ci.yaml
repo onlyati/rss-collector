@@ -32,7 +32,7 @@ jobs:
       - name: Run Go Linter
         uses: golangci/golangci-lint-action@v6
         with:
-          args: run
+          version: v1.60
 
       - name: Go code formatting
         run: |
