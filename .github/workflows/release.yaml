@@ -38,6 +38,7 @@ jobs:
             type=semver,pattern={{major}}
             type=raw,value=${{ inputs.version_full }},event=workflow_dispatch
             type=raw,value=${{ inputs.version_major }},event=workflow_dispatch
+            type=raw,value=latest,enable=${{ github.ref == format('refs/heads/{0}', 'master') }},event=workflow_dispatch
       - name: Docker login
         uses: docker/login-action@v3
         with:
