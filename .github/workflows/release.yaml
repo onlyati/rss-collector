@@ -6,6 +6,9 @@ on:
       - "v*.*.*"
   pull_request:
   workflow_dispatch:
+    inputs:
+      version:
+        default: 1.0.0
 
 jobs:
   release:
@@ -29,13 +32,15 @@ jobs:
         with:
           images: ${{ matrix.image }}
           tags: |
-            type=semver,pattern={{inputs.version}}
             type=schedule
             type=ref,event=branch
             type=ref,event=pr
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
             type=semver,pattern={{major}}
+            type=ref,event=workflow_dispatch,pattern={{version}},value=${{ inputs.version }}
+            type=ref,event=workflow_dispatch,pattern={{major}}.{{minor}},value=${{ inputs.version }}
+            type=ref,event=workflow_dispatch,pattern={{major}},value=${{ inputs.version }}
       - name: Docker login
         uses: docker/login-action@v3
         with:
