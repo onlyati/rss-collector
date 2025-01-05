@@ -36,6 +36,7 @@ func main() {
 		api, err := api.NewRouter(configYAML)
 		if err != nil {
 			slog.Error("failed to initialize api", "error", err)
+			os.Exit(16)
 		}
 		api.Listen()
 	}
