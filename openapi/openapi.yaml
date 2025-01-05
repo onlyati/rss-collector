@@ -10,6 +10,9 @@ info:
 tags:
   - name: rss
     description: RSS related endpoints
+servers:
+  - url: http://{{.HostName}}:{{.Port}}
+    description: Host server
 paths:
   /rss/v1:
     get:
@@ -118,8 +121,8 @@ components:
       description: Authentication for the API
       flows:
         authorizationCode: 
-          authorizationUrl: https://auth.thinkaboutit.tech/realms/dev/protocol/openid-connect/auth
-          tokenUrl: https://auth.thinkaboutit.tech/realms/dev/protocol/openid-connect/token
+          authorizationUrl: {{.JWKSauth}}
+          tokenUrl: {{.JWKStoken}}
           scopes:
             openid:
 security:
