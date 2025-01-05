@@ -115,11 +115,18 @@ func NewRouter(configYAML []byte) (*API, error) {
 
 	// ===> Endpoints /user/v1
 	apiUserV1 := apiUser.Group("/v1")
-	apiUserV1.POST("/register", app.RegisterUser)
+
+	// User stuff
 	apiUserV1.GET("", app.ListUsers)
 	apiUserV1.POST("", app.CreateUser)
 	apiUserV1.DELETE("", app.DeleteUser)
 	apiUserV1.DELETE("/hard", app.DeleteUserHard)
+
+	// Category stuff
+	apiUserV1.GET("/favorite", app.ListCategories)
+	apiUserV1.POST("/favorite", app.CreateCategory)
+	apiUserV1.DELETE("/favorite", app.DeleteCategory)
+	apiUserV1.DELETE("/favorite/hard", app.DeleteCategoryHard)
 
 	//
 	// ===> Finish it!

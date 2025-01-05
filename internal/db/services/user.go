@@ -67,7 +67,7 @@ func ReadUserService(gormDB *gorm.DB, username string) ([]db.User, error) {
 
 func DeleteUsersHard(gormDB *gorm.DB) error {
 	var users []db.User
-	err := gormDB.Unscoped().Find(&users).Error
+	err := gormDB.Unscoped().Where("deleted_at is not null").Find(&users).Error
 	if err != nil {
 		return err
 	}
@@ -80,12 +80,7 @@ func DeleteUsersHard(gormDB *gorm.DB) error {
 	return err
 }
 
-func DeleteUserService(gormDB *gorm.DB, username string) (*db.User, error) {
-	var user db.User
-	err := gormDB.Where(&db.User{UserName: username}).Delete(&user).Error
-	if err != nil {
-		return nil, err
-	}
-
-	return &user, nil
+func DeleteUserService(gormDB *gorm.DB, username string) error {
+	err := gormDB.Where("user_name = ?", username).Delete(&db.User{}).Error
+	return err
 }
