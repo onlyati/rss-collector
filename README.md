@@ -35,6 +35,7 @@ REST API service variables:
 - `RSS_API_PORT`: Port number where REST API listen
 - `RSS_CORS_ORIGINS`: Origins list, separated by ',' for allowed origins
 - `RSS_CORS_METHODS`: Method list, separated by ',' for allowed methods
+TODO: add authentication related variables.
 
 Collector service variables:
 - `RSS_YOUTUBE_*`: List about Youtube channels that must be collected
