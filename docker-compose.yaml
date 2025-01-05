@@ -10,6 +10,7 @@ services:
       - RSS_DB_NAME=rss_db
       - RSS_API_HOSTNAME=0.0.0.0
       - RSS_API_PORT=3001
+      - RSS_API_AUTH_CONFIG=https://hostname/realms/my_realm/.well-known/openid-configuration
       - RSS_CORS_ORIGINS=http://localhost:3000
       - RSS_CORS_METHODS=GET
     ports:
