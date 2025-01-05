@@ -13,6 +13,7 @@ import (
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
+	"github.com/onlyati/rss-collector/internal/api/auth"
 	"github.com/onlyati/rss-collector/internal/api/routes"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
@@ -35,6 +36,11 @@ func NewRouter(configYAML []byte) (*API, error) {
 		return nil, err
 	}
 
+	authConf, err := auth.NewAuthentication(config.ApiOptions.AuthConfig)
+	if err != nil {
+		return nil, err
+	}
+
 	app := routes.App{Db: db}
 	router := gin.Default()
 
@@ -49,10 +55,13 @@ func NewRouter(configYAML []byte) (*API, error) {
 
 	if os.Getenv("GIN_MODE") != "release" {
 		router.StaticFile("/docs", "./openapi/index.html")
+		router.StaticFile("/docs/index.html", "./openapi/index.html")
+		router.StaticFile("/docs/oauth2-redirect.html", "./openapi/oauth2-redirect.html")
 	}
 	router.StaticFile("/docs/openapi.yaml", "./openapi/openapi.yaml")
 
 	apiRSS := router.Group("/rss")
+	apiRSS.Use(auth.AuthMiddleware(authConf))
 
 	apiV1 := apiRSS.Group("/v1")
 	apiV1.GET("", app.GetRSS)

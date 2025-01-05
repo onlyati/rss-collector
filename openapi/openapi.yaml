@@ -112,3 +112,16 @@ components:
         link:
           type: string
           description: Link to the original article
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      description: Authentication for the API
+      flows:
+        authorizationCode: 
+          authorizationUrl: https://auth.thinkaboutit.tech/realms/dev/protocol/openid-connect/auth
+          tokenUrl: https://auth.thinkaboutit.tech/realms/dev/protocol/openid-connect/token
+          scopes:
+            openid:
+security:
+  - oauth2:
+    - openid
