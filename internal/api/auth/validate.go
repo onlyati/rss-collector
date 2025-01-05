@@ -11,7 +11,7 @@ import (
 type Authentication struct {
 	lock  sync.RWMutex
 	jwks  *JWKS
-	links *KeycloakLinks
+	Links *KeycloakLinks
 }
 
 func NewAuthentication(endpointsLink string) (*Authentication, error) {
@@ -27,7 +27,7 @@ func NewAuthentication(endpointsLink string) (*Authentication, error) {
 
 	return &Authentication{
 		jwks:  jwks,
-		links: links,
+		Links: links,
 	}, nil
 }
 
@@ -35,7 +35,7 @@ func (auth *Authentication) refreshJWKS() error {
 	auth.lock.Lock()
 	defer auth.lock.Unlock()
 
-	newJWKS, err := newJWKS(auth.links)
+	newJWKS, err := newJWKS(auth.Links)
 	if err != nil {
 		return err
 	}

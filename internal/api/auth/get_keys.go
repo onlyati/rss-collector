@@ -12,9 +12,10 @@ import (
 )
 
 type KeycloakLinks struct {
-	Issuer        string `json:"issuer"`
-	TokenEndpoint string `json:"token_endpoint"`
-	JWKSUri       string `json:"jwks_uri"`
+	Issuer                string `json:"issuer"`
+	TokenEndpoint         string `json:"token_endpoint"`
+	JWKSUri               string `json:"jwks_uri"`
+	AuthorizationEndpoint string `json:"authorization_endpoint"`
 }
 
 func newKeycloakLinks(configLink string) (*KeycloakLinks, error) {

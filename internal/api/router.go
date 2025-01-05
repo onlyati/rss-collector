@@ -41,7 +41,12 @@ func NewRouter(configYAML []byte) (*API, error) {
 		return nil, err
 	}
 
-	app := routes.App{Db: db}
+	app := routes.App{
+		Db:          db,
+		Hostname:    config.ApiOptions.Hostname,
+		Port:        config.ApiOptions.Port,
+		AuthOptions: authConf.Links,
+	}
 	router := gin.Default()
 
 	corsPolicy := cors.DefaultConfig()
@@ -52,13 +57,15 @@ func NewRouter(configYAML []byte) (*API, error) {
 		corsPolicy.AllowOrigins = strings.Split(config.CorsConfig.Origins, ",")
 	}
 	router.Use(cors.New(corsPolicy))
+	router.LoadHTMLGlob("openapi/*")
 
+	swagger := router.Group("/docs")
 	if os.Getenv("GIN_MODE") != "release" {
-		router.StaticFile("/docs", "./openapi/index.html")
-		router.StaticFile("/docs/index.html", "./openapi/index.html")
-		router.StaticFile("/docs/oauth2-redirect.html", "./openapi/oauth2-redirect.html")
+		swagger.GET("/", app.GetSwaggerUI)
+		swagger.GET("/index.html", app.GetSwaggerUI)
+		swagger.GET("oauth2-redirect.html", app.GetRedirect)
 	}
-	router.StaticFile("/docs/openapi.yaml", "./openapi/openapi.yaml")
+	swagger.GET("/openapi.yaml", app.GetSwaggerYAML)
 
 	apiRSS := router.Group("/rss")
 	apiRSS.Use(auth.AuthMiddleware(authConf))
