@@ -33,6 +33,7 @@ REST API service variables:
 - `RSS_DB_PW_PATH`: Path for a file which store the password (file can be mounted via secret)
 - `RSS_API_HOSTNAME`: Hostname where REST API listen
 - `RSS_API_PORT`: Port number where REST API listen
+- `RSS_API_AUTH_CONFIG`: Address for keycloak endpoint list, example https://{{Hostname}}/realms/{{Realm}}/.well-known/openid-configuration
 - `RSS_CORS_ORIGINS`: Origins list, separated by ',' for allowed origins
 - `RSS_CORS_METHODS`: Method list, separated by ',' for allowed methods
 

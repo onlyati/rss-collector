@@ -20,8 +20,9 @@ type CorsConfig struct {
 }
 
 type ApiOptions struct {
-	Hostname string `yaml:"hostname"`
-	Port     int    `yaml:"port"`
+	Hostname   string `yaml:"hostname"`
+	Port       int    `yaml:"port"`
+	AuthConfig string `yaml:"auth_config"`
 }
 
 type DatabaseOption struct {

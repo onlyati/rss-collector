@@ -10,6 +10,9 @@ info:
 tags:
   - name: rss
     description: RSS related endpoints
+servers:
+  - url: http://{{.HostName}}:{{.Port}}
+    description: Host server
 paths:
   /rss/v1:
     get:
@@ -112,3 +115,16 @@ components:
         link:
           type: string
           description: Link to the original article
+  securitySchemes:
+    oauth2:
+      type: oauth2
+      description: Authentication for the API
+      flows:
+        authorizationCode: 
+          authorizationUrl: {{.JWKSauth}}
+          tokenUrl: {{.JWKStoken}}
+          scopes:
+            openid:
+security:
+  - oauth2:
+    - openid

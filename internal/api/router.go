@@ -13,6 +13,7 @@ import (
 
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
+	"github.com/onlyati/rss-collector/internal/api/auth"
 	"github.com/onlyati/rss-collector/internal/api/routes"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
@@ -35,7 +36,17 @@ func NewRouter(configYAML []byte) (*API, error) {
 		return nil, err
 	}
 
-	app := routes.App{Db: db}
+	authConf, err := auth.NewAuthentication(config.ApiOptions.AuthConfig)
+	if err != nil {
+		return nil, err
+	}
+
+	app := routes.App{
+		Db:          db,
+		Hostname:    config.ApiOptions.Hostname,
+		Port:        config.ApiOptions.Port,
+		AuthOptions: authConf.Links,
+	}
 	router := gin.Default()
 
 	corsPolicy := cors.DefaultConfig()
@@ -46,13 +57,18 @@ func NewRouter(configYAML []byte) (*API, error) {
 		corsPolicy.AllowOrigins = strings.Split(config.CorsConfig.Origins, ",")
 	}
 	router.Use(cors.New(corsPolicy))
+	router.LoadHTMLGlob("openapi/*")
 
+	swagger := router.Group("/docs")
 	if os.Getenv("GIN_MODE") != "release" {
-		router.StaticFile("/docs", "./openapi/index.html")
+		swagger.GET("/", app.GetSwaggerUI)
+		swagger.GET("/index.html", app.GetSwaggerUI)
+		swagger.GET("oauth2-redirect.html", app.GetRedirect)
 	}
-	router.StaticFile("/docs/openapi.yaml", "./openapi/openapi.yaml")
+	swagger.GET("/openapi.yaml", app.GetSwaggerYAML)
 
 	apiRSS := router.Group("/rss")
+	apiRSS.Use(auth.AuthMiddleware(authConf))
 
 	apiV1 := apiRSS.Group("/v1")
 	apiV1.GET("", app.GetRSS)

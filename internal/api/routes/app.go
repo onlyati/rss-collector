@@ -1,7 +1,13 @@
 package routes
 
-import "gorm.io/gorm"
+import (
+	"github.com/onlyati/rss-collector/internal/api/auth"
+	"gorm.io/gorm"
+)
 
 type App struct {
-	Db *gorm.DB
+	Db          *gorm.DB
+	Hostname    string
+	Port        int
+	AuthOptions *auth.KeycloakLinks
 }
