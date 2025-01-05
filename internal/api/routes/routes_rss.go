@@ -24,6 +24,10 @@ func (app *App) GetItem(c *gin.Context) {
 	if from_date == "" {
 		from_date = "9999-12-31 00:00:00+00"
 	}
+	selectMode := c.Query("select")
+	if selectMode == "" {
+		selectMode = "select"
+	}
 
 	categoriesRaw := c.Query("categories")
 	categories := []string{}
@@ -36,7 +40,12 @@ func (app *App) GetItem(c *gin.Context) {
 	q := app.Db.Where("pub_date < ?", from_date)
 
 	if len(categories) > 0 {
-		q.Where("category && ?", pq.Array(categories))
+		if selectMode == "unselect" {
+			q.Where("not (category && ?)", pq.Array(categories))
+		} else {
+			q.Where("category && ?", pq.Array(categories))
+		}
+
 	}
 
 	q.Order("pub_date desc").Limit(10)
@@ -47,4 +56,8 @@ func (app *App) GetItem(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusOK, rssItem)
+}
+
+func (app *App) GetCategories(c *gin.Context) {
+
 }
