@@ -111,11 +111,15 @@ func NewRouter(configYAML []byte) (*API, error) {
 	// ===> Endpoints /user
 	//
 	apiUser := router.Group("/user")
-	apiRSS.Use(auth.AuthMiddleware(authConf))
+	apiUser.Use(auth.AuthMiddleware(authConf))
 
 	// ===> Endpoints /user/v1
-	apiUserv1 := apiUser.Group("/v1")
-	apiUserv1.POST("", app.CreateUser)
+	apiUserV1 := apiUser.Group("/v1")
+	apiUserV1.POST("/register", app.RegisterUser)
+	apiUserV1.GET("", app.ListUsers)
+	apiUserV1.POST("", app.CreateUser)
+	apiUserV1.DELETE("", app.DeleteUser)
+	apiUserV1.DELETE("/hard", app.DeleteUserHard)
 
 	//
 	// ===> Finish it!
