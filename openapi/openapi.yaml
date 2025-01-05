@@ -231,6 +231,11 @@ paths:
           schema:
             type: string
           description: Specify category filter, separated by ','
+        - name: select
+          in: query
+          schema:
+            type: string
+          description: If this is unselect, then reverse selection happen
       responses:
         "200":
           description: Successful operation
