@@ -21,6 +21,7 @@ echo "  db_name: $RSS_DB_NAME" >> $file
 echo "api:" >> $file
 echo "  hostname: $RSS_API_HOSTNAME" >> $file
 echo "  port: $RSS_API_PORT" >> $file
+echo "  auth_config: $RSS_API_AUTH_CONFIG" >> $file
 echo "cors:" >> $file
 echo "  origins: $RSS_CORS_ORIGINS" >> $file
 echo "  methods: $RSS_CORS_METHODS" >> $file
