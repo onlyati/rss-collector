@@ -6,14 +6,194 @@ info:
     selected items are stored.
   contact:
     email: onlyati@pm.me
-  version: '1'
+  version: "1"
 tags:
   - name: rss
     description: RSS related endpoints
+  - name: user
+    description: User related endpoints
+  - name: favorite
+    description: User's favorite list
 servers:
   - url: http://{{.HostName}}:{{.Port}}
     description: Host server
 paths:
+  /user/v1:
+    post:
+      tags:
+        - user
+      summary: Register a new user
+      description: Similar endpoint like create but here the user name come from JWT token
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/User"
+        "500":
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    get:
+      tags:
+        - user
+      summary: List users or check if it exists
+      parameters:
+        - name: username
+          in: query
+          schema:
+            type: string
+          description: Name of the user
+        - name: index
+          in: query
+          schema:
+            type: int
+          description: Start index if you list
+      responses:
+        "200":
+          description: Successful operations
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/User"
+    delete:
+      tags:
+        - user
+      summary: Delete user from database
+      description: Remove own user from database
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+        "500":
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /user/v1/hard:
+    delete:
+      tags:
+        - user
+      summary: Cleanup user's table
+      description: Delete user and its every single settings from database
+      responses:
+        "200":
+          description: Successful operation
+        "500":
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /user/v1/favorite:
+    post:
+      tags:
+        - favorite
+      summary: Create new category for the specific user
+      description: They indicates favorite of users
+      parameters:
+        - name: category
+          in: query
+          schema:
+            type: string
+          description: category name to check it exists
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FavoriteCategory"
+        "400":
+          description: Wrong request from user
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    get:
+      tags:
+        - favorite
+      summary: List categories that assigned for a user or test it exists
+      parameters:
+        - name: index
+          in: query
+          schema:
+            type: int
+          description: Start index if you list
+        - name: category
+          in: query
+          schema:
+            type: string
+          description: category name to check it exists
+      responses:
+        "200":
+          description: Successful operations
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/FavoriteCategory"
+    delete:
+      tags:
+        - favorite
+      summary: Delete favorite from user
+      parameters:
+        - name: category
+          in: query
+          schema:
+            type: string
+          description: category name to check it exists
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FavoriteCategory"
+        "404":
+          description: Specific user does not found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        "500":
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /user/v1/favorite/hard:
+    delete:
+      tags:
+        - favorite
+      summary: Cleanup categories table
+      responses:
+        "200":
+          description: Successful operation
+        "500":
+          description: Server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
   /rss/v1:
     get:
       tags:
@@ -21,18 +201,20 @@ paths:
       summary: list RSS feeds
       description: This endpoint list all registered RSS channels that are collected
       responses:
-        '200':
+        "200":
           description: Successful operation
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/RSS'
-        '500':
+                type: array
+                items:
+                  $ref: "#/components/schemas/RSS"
+        "500":
           description: Internal server error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Error'
+                $ref: "#/components/schemas/Error"
   /rss/v1/item:
     get:
       tags:
@@ -50,20 +232,30 @@ paths:
             type: string
           description: Specify category filter, separated by ','
       responses:
-        '200':
+        "200":
           description: Successful operation
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/RSSItem'
-        '500':
+                $ref: "#/components/schemas/RSSItem"
+        "500":
           description: Internal server error
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Error'
+                $ref: "#/components/schemas/Error"
 components:
   schemas:
+    User:
+      type: object
+      properties:
+        user_name:
+          type: string
+    FavoriteCategory:
+      type: object
+      properties:
+        name:
+          type: string
     Error:
       type: object
       properties:
@@ -120,11 +312,11 @@ components:
       type: oauth2
       description: Authentication for the API
       flows:
-        authorizationCode: 
-          authorizationUrl: {{.JWKSauth}}
-          tokenUrl: {{.JWKStoken}}
+        authorizationCode:
+          authorizationUrl: "{{ .JWKSauth }}"
+          tokenUrl: "{{ .JWKStoken }}"
           scopes:
-            openid:
+            openid: Getting access for base user information
 security:
   - oauth2:
-    - openid
+      - openid

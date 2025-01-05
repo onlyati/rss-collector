@@ -15,7 +15,12 @@ func DatabaseAutoMigration(config *processor_config.RSSProcessorConfig) {
 	}
 
 	// Run migrations
-	err = db.AutoMigrate(&rss_model.RSS{}, &rss_model.RSSItem{})
+	err = db.AutoMigrate(
+		&rss_model.RSS{},
+		&rss_model.RSSItem{},
+		&User{},
+		&FavoriteCategory{},
+	)
 	if err != nil {
 		slog.Error("failed to migrate database", "error", err)
 	}
