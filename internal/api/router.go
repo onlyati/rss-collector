@@ -106,6 +106,7 @@ func NewRouter(configYAML []byte) (*API, error) {
 	apiRSSv1 := apiRSS.Group("/v1")
 	apiRSSv1.GET("", app.GetRSS)
 	apiRSSv1.GET("/item", app.GetItem)
+	apiRSSv1.GET("/item-category", app.GetCategories)
 
 	//
 	// ===> Endpoints /user
