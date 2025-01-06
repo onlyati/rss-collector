@@ -231,6 +231,11 @@ paths:
           schema:
             type: string
           description: Specify category filter, separated by ','
+        - name: select
+          in: query
+          schema:
+            type: string
+          description: If this is unselect, then reverse selection happen
       responses:
         "200":
           description: Successful operation
@@ -238,6 +243,26 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/RSSItem"
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /rss/v1/item-category:
+    get:
+      tags:
+        - rss
+      summary: Return with RSS item categories
+      responses:
+        "200":
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: string
         "500":
           description: Internal server error
           content:
