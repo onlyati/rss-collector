@@ -9,19 +9,31 @@ import (
 )
 
 func (app *App) GetSwaggerYAML(c *gin.Context) {
-	templ, err := template.ParseFiles("openapi/openapi.yaml")
+	template, err := template.ParseFiles("openapi/openapi.yaml")
 	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
 	}
 
 	builder := &strings.Builder{}
-	if err := templ.Execute(builder, gin.H{
-		"HostName":  app.Hostname,
-		"Port":      app.Port,
-		"JWKSauth":  app.AuthOptions.AuthorizationEndpoint,
-		"JWKStoken": app.AuthOptions.TokenEndpoint,
-	}); err != nil {
+
+	if app.AuthOptions != nil {
+		err = template.Execute(builder, gin.H{
+			"HostName":   app.Hostname,
+			"Port":       app.Port,
+			"AuthEnable": true,
+			"JWKSauth":   app.AuthOptions.AuthorizationEndpoint,
+			"JWKStoken":  app.AuthOptions.TokenEndpoint,
+		})
+	} else {
+		err = template.Execute(builder, gin.H{
+			"HostName":   app.Hostname,
+			"Port":       app.Port,
+			"AuthEnable": false,
+		})
+	}
+
+	if err != nil {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
 	}
