@@ -59,5 +59,13 @@ func (app *App) GetItem(c *gin.Context) {
 }
 
 func (app *App) GetCategories(c *gin.Context) {
+	var categories []string
+	query := "SELECT DISTINCT UNNEST(category) AS cat FROM rss_items;"
+	err := app.Db.Raw(query).Scan(&categories).Error
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
+		return
+	}
 
+	c.JSON(http.StatusOK, categories)
 }
