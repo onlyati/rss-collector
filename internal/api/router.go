@@ -43,13 +43,6 @@ func NewRouter(configYAML []byte) (*API, error) {
 		return nil, err
 	}
 
-	// This setup authentication: configuration URL then save the endpoints
-	// It also download the RSA public keys
-	authConf, err := auth.NewAuthentication(config.ApiOptions.AuthConfig)
-	if err != nil {
-		return nil, err
-	}
-
 	//
 	// ===> Inject data to endpoints
 	//
@@ -60,7 +53,7 @@ func NewRouter(configYAML []byte) (*API, error) {
 		Db:          db,
 		Hostname:    config.ApiOptions.Hostname,
 		Port:        config.ApiOptions.Port,
-		AuthOptions: authConf.Links,
+		AuthOptions: nil,
 	}
 
 	// Create a new router
@@ -96,23 +89,32 @@ func NewRouter(configYAML []byte) (*API, error) {
 	swagger.GET("/openapi.yaml", app.GetSwaggerYAML)
 
 	//
-	// ===> Endpoint /rss
+	// ===> Endpoint groups
 	//
-
 	apiRSS := router.Group("/rss")
-	apiRSS.Use(auth.AuthMiddleware(authConf))
+	apiUser := router.Group("/user")
+
+	//
+	// ===> Add authentication
+	//
+	if config.ApiOptions.AuthConfig != "nope" {
+		// This setup authentication: configuration URL then save the endpoints
+		// It also download the RSA public keys
+		slog.Info("setup authentication")
+		authConf, err := auth.NewAuthentication(config.ApiOptions.AuthConfig)
+		if err != nil {
+			return nil, err
+		}
+		app.AuthOptions = authConf.Links
+		apiRSS.Use(auth.AuthMiddleware(authConf))
+		apiUser.Use(auth.AuthMiddleware(authConf))
+	}
 
 	// ===> Endpoints /rss/v1
 	apiRSSv1 := apiRSS.Group("/v1")
 	apiRSSv1.GET("", app.GetRSS)
 	apiRSSv1.GET("/item", app.GetItem)
 	apiRSSv1.GET("/item-category", app.GetCategories)
-
-	//
-	// ===> Endpoints /user
-	//
-	apiUser := router.Group("/user")
-	apiUser.Use(auth.AuthMiddleware(authConf))
 
 	// ===> Endpoints /user/v1
 	apiUserV1 := apiUser.Group("/v1")

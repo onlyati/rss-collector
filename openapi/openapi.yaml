@@ -332,6 +332,7 @@ components:
         link:
           type: string
           description: Link to the original article
+{{ if .AuthEnable }}
   securitySchemes:
     oauth2:
       type: oauth2
@@ -345,3 +346,4 @@ components:
 security:
   - oauth2:
       - openid
+{{ end }}
