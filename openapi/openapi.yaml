@@ -6,7 +6,7 @@ info:
     selected items are stored.
   contact:
     email: onlyati@pm.me
-  version: "1"
+  version: "1.0.2"
 tags:
   - name: rss
     description: RSS related endpoints
