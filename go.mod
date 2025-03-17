@@ -1,10 +1,9 @@
 module github.com/onlyati/rss-collector
 
 go 1.23.4
-
 require gopkg.in/yaml.v3 v3.0.1
 
-require github.com/alecthomas/kong v1.8.1
+require github.com/alecthomas/kong v1.9.0
 
 require (
 	github.com/confluentinc/confluent-kafka-go/v2 v2.8.0
