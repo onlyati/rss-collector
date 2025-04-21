@@ -7,7 +7,7 @@ require gopkg.in/yaml.v3 v3.0.1
 require github.com/alecthomas/kong v1.10.0
 
 require (
-	github.com/confluentinc/confluent-kafka-go/v2 v2.8.0
+	github.com/confluentinc/confluent-kafka-go/v2 v2.10.0
 	github.com/gin-contrib/cors v1.7.5
 	github.com/gin-gonic/gin v1.10.0
 	github.com/golang-jwt/jwt/v5 v5.2.2
