@@ -4,17 +4,17 @@ go 1.23.4
 
 require gopkg.in/yaml.v3 v3.0.1
 
-require github.com/alecthomas/kong v1.12.0
+require github.com/alecthomas/kong v1.12.1
 
 require (
 	github.com/confluentinc/confluent-kafka-go/v2 v2.11.0
 	github.com/gin-contrib/cors v1.7.6
 	github.com/gin-gonic/gin v1.10.1
-	github.com/golang-jwt/jwt/v5 v5.2.2
+	github.com/golang-jwt/jwt/v5 v5.2.3
 	github.com/google/uuid v1.6.0
 	github.com/lib/pq v1.10.9
 	gorm.io/driver/postgres v1.6.0
-	gorm.io/gorm v1.30.0
+	gorm.io/gorm v1.30.1
 )
 
 require (
