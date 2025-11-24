@@ -4,7 +4,7 @@ go 1.23.4
 
 require gopkg.in/yaml.v3 v3.0.1
 
-require github.com/alecthomas/kong v1.12.1
+require github.com/alecthomas/kong v1.13.0
 
 require (
 	github.com/confluentinc/confluent-kafka-go/v2 v2.12.0
