@@ -23,12 +23,10 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
-          go-version: '1.21'
+          go-version: "1.24"
 
       - name: Run Go Linter
         uses: golangci/golangci-lint-action@v6
-        with:
-          version: v1.60
 
       - name: Go code formatting
         run: |
@@ -47,4 +45,3 @@ jobs:
           go build -o rss-api ./cmd/rss-api
           go build -o rss-collector ./cmd/rss-collector
           go build -o rss-processor ./cmd/rss-processor
-        
