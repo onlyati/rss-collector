@@ -1,5 +1,5 @@
 # Stage 1: Build the Go binary
-FROM golang:1.23-alpine AS builder
+FROM golang:1.24-alpine AS builder
 
 RUN apk --no-cache add ca-certificates librdkafka-dev pkgconf musl-dev alpine-sdk
 # Set the Current Working Directory inside the container
