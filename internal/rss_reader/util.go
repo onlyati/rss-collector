@@ -24,7 +24,7 @@ func sendData[T rss_model.RSSable](reader *RSSReader, componentType string, item
 			slog.Error("failed to fetch RSS", "url", url, "error", err)
 			continue
 		}
-		defer response.Body.Close()
+		defer func() { _ = response.Body.Close() }()
 
 		if response.StatusCode != 200 {
 			slog.Error("http request did not return with 200", "status_code", response.StatusCode)
