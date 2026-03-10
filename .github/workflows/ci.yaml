@@ -23,10 +23,10 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v5
         with:
-          go-version: "1.24"
+          go-version: "1.25"
 
       - name: Run Go Linter
-        uses: golangci/golangci-lint-action@v6
+        uses: golangci/golangci-lint-action@v9
 
       - name: Go code formatting
         run: |

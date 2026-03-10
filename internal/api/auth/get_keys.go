@@ -23,7 +23,7 @@ func newKeycloakLinks(configLink string) (*KeycloakLinks, error) {
 	if err != nil {
 		return nil, err
 	}
-	defer resp.Body.Close()
+	defer func() { _ = resp.Body.Close() }()
 
 	if resp.StatusCode != http.StatusOK {
 		return nil, fmt.Errorf("unexpected status code: %v", resp.StatusCode)
@@ -59,7 +59,7 @@ func newJWKS(links *KeycloakLinks) (*JWKS, error) {
 	if err != nil {
 		return nil, err
 	}
-	defer resp.Body.Close()
+	defer func() { _ = resp.Body.Close() }()
 
 	if resp.StatusCode != http.StatusOK {
 		return nil, fmt.Errorf("unexpected status code: %v", resp.StatusCode)
